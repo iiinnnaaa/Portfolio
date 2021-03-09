@@ -6,12 +6,12 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<script type="text/javascript" src="js/index.js"></script>
 
 	<div class="main">
 
 		<header>
-			<input id="hamburger" type="checkbox" class="toggle">
-			<label for="hamburger"></label>
+			<div class="mobile-menu-icon" onclick="menuFunction()" ><span></span></div>
 
 			<nav class="header-nav">
 			<ul class="menu">
@@ -29,22 +29,23 @@
 		<div class="content">
 
 			<div id="dot-nav">
-				<a href="#" onclick="$('.content').scrollTop(900)"></a>
-				<a href="#"></a>
-				<a href="#"></a>
-				<a href="#"></a>
-				<a href="#"></a>
-				<a href="#"></a>
+				<a onclick="scrollFunction(1)"></a>
+				<a onclick="scrollFunction(2)"></a>
+				<a onclick="scrollFunction(3)"></a>
+				<a onclick="scrollFunction(4)"></a>
+				<a onclick="scrollFunction(5)"></a>
+				<a onclick="scrollFunction(6)"></a>
+				<a onclick="scrollFunction(7)"></a>
 			</div>
 
 			<div class="sections">
-					<div class="section"></div>
-					<div class="section1"></div>
-					<div class="section"></div>
-					<div class="section1"></div>
-					<div class="section"></div>
-					<div class="section1"></div>
-					<div class="section"></div>
+					<div class="section"> <h1>section 1</h1> </div>
+					<div class="section1"> <h1>section 2</h1> </div>
+					<div class="section"> <h1>section 3</h1> </div>
+					<div class="section1"> <h1>section 4</h1> </div>
+					<div class="section"> <h1>section 5</h1> </div>
+					<div class="section1"> <h1>section 6</h1> </div>
+					<div class="section"> <h1>section 7</h1> </div>
 			</div>
 
 		</div>
