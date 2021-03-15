@@ -1,4 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+
+
+/*
+#48e7e9
+#c0b4ff
+#ffffff
+#5429c5
+#494949
+#472ada
+#111111
+#c3c3c3
+#755cf2
+*/
 
 
 *{
@@ -82,6 +97,7 @@ header{
 }
 
 .dot-active{
+	position: relative;
 	background-color: #ffffff !important;
 	/*width: 12px !important;*/
 	/*height: 12px !important;*/
@@ -99,7 +115,6 @@ header{
 
 
 .section {
-	background-color: pink;
 	width: 100%;
 	height: 100vh;
 }
@@ -196,4 +211,44 @@ footer{
 
 .overflow_h {
 	overflow: hidden
+}
+
+#page1{
+	background-color: #5429c5;
+	background-image: url('../img/AYZY9532.jpg');
+	background-repeat: no-repeat;
+	background-size: 50% 100%;
+}
+
+.page1-text{
+	display: inline-block;
+	margin: auto;
+	top: 50%;
+	right: 5%;
+	position: absolute;
+}
+
+.page1-text h4{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	color: #48E7E9;
+	font-size: 30px;
+}
+
+.page1-text h1{
+	color: #ffffff;
+	font-size: 83px;
+}
+
+.dot-active:before {
+	/* margin: 0; */
+	position: absolute;
+	left: -7px;
+	/* padding: 0; */
+	right: -7px;
+	bottom: -7px;
+	top: -7px;
+	border-radius: 50%;
+	content: '';
+	border: 1px solid #fff;
 }
