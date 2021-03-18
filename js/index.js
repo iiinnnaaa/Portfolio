@@ -14,7 +14,6 @@ function menuFunction() {
 
 function scrollFunction(id, event) {
 		addClass(id, event);
-
 		let winheight = 7 * window.innerHeight;
 		let calc = winheight * ((id - 1) / 7);
 		let fin = calc + 3;
