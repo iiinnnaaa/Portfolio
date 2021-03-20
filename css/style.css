@@ -47,7 +47,7 @@ header{
 	left: 0;
 	right: 0;
 	bottom: 0;
-	top: 63px;
+	top: 0;
 	display: flex;
 	background: rgba(0,0,0,0.5);
 	justify-content: center;
@@ -205,7 +205,7 @@ footer{
 }
 
 .mobile-menu-icon.clicked span::before {
-	transform: translateY(9px) rotate(45deg)
+	transform: translateY(11px) rotate(45deg)
 }
 
 .mobile-menu-icon.clicked span::after {
@@ -213,7 +213,8 @@ footer{
 }
 
 .mobile-menu-icon.clicked span::before {
-	top: 0
+	top: 0;
+	height: 1px;
 }
 
 .mobile-menu-icon.clicked span:before, .mobile-menu-icon.clicked span:after {
@@ -434,7 +435,7 @@ padding: 10px;
 }
 
 .pro-lines{
-	margin-top: 13px;
+	margin-top: 16px;
 }
 
 .progress-line{
@@ -504,35 +505,45 @@ padding: 10px;
 	margin-top: 17px;
 	display: flex;
 	justify-content: space-between;
-	width: 98%;
+	width: 97.5%;
+}
+
+.num{
+	font-size: 13px;
+	color: black;
+	letter-spacing: 1px;
+	font-weight: 700;
 }
 
 .css {
-	margin-top: 36px;
+	margin-top: 37px;
 	display: flex;
 	justify-content: space-between;
-	width: 98%;
+	width: 97.4%;
+}
+
+#line-css{
+	margin-top: 16px;
 }
 
 .js{
 	display: flex;
 	justify-content: space-between;
-	width: 98%;
-	margin-top: 36px;
+	width: 97.4%;
+	margin-top: 38px;
 }
 
 #js{
-	font-size: 14px;
+	font-size: 13px;
 	font-weight: 800;
 	letter-spacing: 0.5px;
 }
 
-
 .php{
 	display: flex;
 	justify-content: space-between;
-	width: 98%;
-	margin-top: 36px;
+	width: 97.4%;
+	margin-top: 35px;
 }
 
 @keyframes animation {
@@ -564,8 +575,75 @@ padding: 10px;
 
 #page3{
 	height: 1013px;
+	background-color: #453bd8;
 }
 
+.third-page{
+	width: 90%;
+	margin: auto;
+	height: 90%;
+	display: flex;
+}
+
+.third-cont{
+display: flex;
+justify-content: space-between;
+width: 100%;
+}
+
+.third-text1{
+	width: 430px;
+	display: flex;
+	margin-top: 100px;
+}
+
+.line2{
+	border-bottom: 2px solid #ffffff;
+	width: 32px;
+	height: 50px;
+	margin-top: 51px;
+	margin-left: 7px;
+}
+
+.work{
+	color: wheat;
+	font-size: 72px;
+	margin-top: 46px;
+	margin-left: 25px;
+	font-family: 'Playfair Display', sans-serif;
+	font-weight: 800;
+	letter-spacing: 1px;
+}
+
+.third-text2{
+	color: wheat;
+	width: 653px;
+	font-size: 16px;
+	font-family: "Open Sans", sans-serif;
+	margin-top: 176px;
+	margin-left: 81px;
+	letter-spacing: 0.5px;
+	line-height: 1.87;
+}
+.third-link{
+	margin-top: 16px;
+	font-size: 17px;
+	margin-left: 0;
+}
+
+.third-link > a {
+	color: #48e7e9;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.third-arrows{
+	margin-left: 0px;
+	margin-top: 149px;
+	margin-right: 2px;
+	width: 100px;
+	height: 100px;
+}
 
 #page7{
 background-color: #5429c5;
