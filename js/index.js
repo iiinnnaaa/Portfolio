@@ -1,7 +1,26 @@
+
+
+
+
+
+// window.onscroll = ()=>{
+// 	let header = document.getElementById('header');
+// 	if (window.scrollTop > 1000){
+// 		if (header.style.background === "#000000") {
+// 			header.style.background = "transparent";
+// 		} else {
+// 			header.style.background = "#000000";
+// 		}
+// 	console.log('done');
+// 	}
+// 	else{
+// 		console.log('fail');
+// 	}
+// }
+
 function menuFunction() {
 	let getel = document.getElementsByClassName("mobile-menu-icon");
 	getel[0].classList.toggle('clicked');
-
 
 	let elems = document.getElementsByClassName("header-nav");
 	let elem = elems[0];
@@ -14,8 +33,8 @@ function menuFunction() {
 
 function scrollFunction(id, event) {
 		addClass(id, event);
-		let winheight = 7 * window.innerHeight;
-		let calc = winheight * ((id - 1) / 7);
+		let windowHeight = 7 * window.innerHeight;
+		let calc = windowHeight * ((id - 1) / 5);
 		let fin = calc + 3;
 		if (id === 1) {
 			window.scrollTo({
@@ -51,3 +70,5 @@ function scrollFunction(id, event) {
 			}
 		}
 	}
+
+

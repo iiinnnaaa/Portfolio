@@ -4,12 +4,14 @@
 	<meta charset="UTF-8">
 	<title>Portfolio</title>
 	<link href="css/style.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/glide.core.min.css">
+	<link rel="stylesheet" href="css/glide.theme.min.css">
 </head>
 <body>
+<script src="js/glide.min.js"></script>
 <script src="js/index.js" type="text/javascript"></script>
-
 <div class="main">
-	<header>
+	<header id="header">
 		<div class="mobile-menu-icon" onclick="menuFunction()"><span></span></div>
 
 		<nav class="header-nav">
@@ -134,11 +136,33 @@
 								<a href="">View All Works</a>
 							</div>
 						</div>
-						<div class="third-arrows">
-
-						</div>
 					</div>
+
 					<div class="third-slide">
+						<div class="slider">
+							<div class="glide">
+								<div class="arrows">
+									<div class="glide__arrows" data-glide-el="controls">
+										<button class="left" data-glide-dir="<"><img  src="img/left.png" alt=""></button>
+										<button class="right" data-glide-dir=">"><img  src="img/right.png"  alt=""></button>
+									</div>
+								</div>
+
+								<div class="glide__track" data-glide-el="track">
+									<ul class="glide__slides">
+										<li class="glide__slide poster-list"><img src="img/poster1.png" alt=""></li>
+										<li class="glide__slide poster-list"><img src="img/poster2.jpg" alt=""></li>
+										<li class="glide__slide poster-list"><img src="img/poster3.jpg" alt=""></li>
+										<li class="glide__slide poster-list"><img src="img/poster4.jpg" alt=""></li>
+										<li class="glide__slide poster-list"><img src="img/poster5.jpg" alt=""></li>
+										<li class="glide__slide poster-list"><img src="img/poster6.jpg" alt=""></li>
+										<li class="glide__slide poster-list"><img src="img/poster7.jpg" alt=""></li>
+										<li class="glide__slide poster-list"><img src="img/poster8.jpg" alt=""></li>
+
+									</ul>
+								</div>
+							</div>
+						</div>
 
 					</div>
 				</div>
@@ -153,13 +177,36 @@
 	<footer></footer>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" type="text/javascript"></script>
 
-<script
-	crossorigin="anonymous"
-	integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-	src="https://code.jquery.com/jquery-3.6.0.min.js">
+<script type="text/javascript">
+	const config = {
+		type: "slider",
+		perView: 4,
+		breakpoints: {
+			800:{
+				perView: 1
+			}
+		},
+		bound: true,
+		startAt: 0,
+		gap: 40,
+	}
+
+	new Glide('.glide', config).mount();
 </script>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script>
+	$(window).on("scroll", function() {
+		let header = document.getElementById('header');
+		if($(window).scrollTop() > 500) {
+			header.style.background = "#000000";
+		} else {
+			header.style.background = "transparent";
+		}
+	});
+</script>
+
 
 </body>
 </html>

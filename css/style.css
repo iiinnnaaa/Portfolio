@@ -33,8 +33,8 @@ header{
 	z-index: 7;
 	position: fixed;
 	width:100%;
-	/*background:#1d1f20;*/
-	height:63px;
+	background: transparent;
+	height:80px;
 	line-height:50px;
 	top: 0;
 	bottom: 0;
@@ -589,6 +589,7 @@ padding: 10px;
 display: flex;
 justify-content: space-between;
 width: 100%;
+	height: 300px;
 }
 
 .third-text1{
@@ -621,7 +622,8 @@ width: 100%;
 	font-size: 16px;
 	font-family: "Open Sans", sans-serif;
 	margin-top: 176px;
-	margin-left: 81px;
+	/*margin-left: 81px;*/
+	margin-right: 14px;
 	letter-spacing: 0.5px;
 	line-height: 1.87;
 }
@@ -637,13 +639,82 @@ width: 100%;
 	cursor: pointer;
 }
 
-.third-arrows{
-	margin-left: 0px;
-	margin-top: 149px;
-	margin-right: 2px;
-	width: 100px;
-	height: 100px;
+.arrows{
+	margin-top: -170px;
+	margin-bottom: 144px;
+	margin-left: 1311px;
 }
+
+.arrow-button{
+	background: none;
+	border: none;
+}
+
+.left{
+	background: none;
+	padding: 7px;
+	border: 2px solid white;
+	border-radius: 50%;
+	width: 45px;
+	height: 45px;
+	margin: 0px 8px;
+	cursor: pointer;
+}
+
+.right{
+	background: none;
+	padding: 7px;
+	border: 2px solid white;
+	border-radius: 50%;
+	width: 45px;
+	height: 45px;
+	cursor: pointer;
+}
+
+
+.left > img {
+	width: 25px;
+	height: 25px;
+}
+
+.right > img {
+	width: 25px;
+	height: 25px;
+}
+
+.third-slide{
+	margin-top: 24.33%;
+	margin-left: -1258px;
+	width: 100%;
+}
+
+.slider{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* margin: 20% auto; */
+	margin-left: 6px;
+}
+
+.poster-list{
+	width: 322px !important;
+	height: 519px !important;
+	background-color: #ffffff;
+}
+
+li > img {
+	width: 322px;
+	height: 519px;
+}
+
+li > img:hover{
+	opacity: 40%;
+	cursor: pointer;
+	/*transform: scale(1.5);*/
+}
+
+
 
 #page7{
 background-color: #5429c5;
