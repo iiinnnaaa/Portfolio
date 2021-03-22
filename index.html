@@ -122,8 +122,7 @@
 					</div>
 				</div>
 			</div>
-
-			<div class="section" id="page3">
+			<div id="page3">
 				<div class="third-page">
 					<div class="third-cont">
 						<div class="third-text1">
@@ -150,15 +149,14 @@
 
 								<div class="glide__track" data-glide-el="track">
 									<ul class="glide__slides">
-										<li class="glide__slide poster-list"><img src="img/poster1.png" alt=""></li>
-										<li class="glide__slide poster-list"><img src="img/poster2.jpg" alt=""></li>
-										<li class="glide__slide poster-list"><img src="img/poster3.jpg" alt=""></li>
-										<li class="glide__slide poster-list"><img src="img/poster4.jpg" alt=""></li>
-										<li class="glide__slide poster-list"><img src="img/poster5.jpg" alt=""></li>
-										<li class="glide__slide poster-list"><img src="img/poster6.jpg" alt=""></li>
-										<li class="glide__slide poster-list"><img src="img/poster7.jpg" alt=""></li>
-										<li class="glide__slide poster-list"><img src="img/poster8.jpg" alt=""></li>
-
+										<li class="glide__slide poster-list"><img src="img/poster1.png" alt=""><span><h1>The Under World</h1> <h3> November 24, 2016</h3></span></li>
+										<li class="glide__slide poster-list"><img src="img/poster2.jpg" alt=""><span><h1>Someones</h1> <h3> November 24, 2016</h3></span></li>
+										<li class="glide__slide poster-list"><img src="img/poster3.jpg" alt=""><span><h1>400</h1> <h3> November 24, 2016</h3></span></li>
+										<li class="glide__slide poster-list"><img src="img/poster4.jpg" alt=""><span><h1>The Under World</h1> <h3> November 24, 2016</h3></span></li>
+										<li class="glide__slide poster-list"><img src="img/poster5.jpg" alt=""><span><h1>Death Note</h1> <h3> November 24, 2016</h3></span></li>
+										<li class="glide__slide poster-list"><img src="img/poster6.jpg" alt=""><span><h1>Office</h1> <h3> November 24, 2016</h3></span></li>
+										<li class="glide__slide poster-list"><img src="img/poster7.jpg" alt=""><span><h1>Queen</h1> <h3> November 24, 2016</h3></span></li>
+										<li class="glide__slide poster-list"><img src="img/poster8.jpg" alt=""><span><h1>Joker</h1> <h3> November 24, 2016</h3></span></li>
 									</ul>
 								</div>
 							</div>
@@ -168,7 +166,44 @@
 				</div>
 			</div>
 
-			<div class="section1"><h1>section 4</h1></div>
+			<div class="section1" id="page4">
+				<div class="fourth-page">
+					<div class="fourth-part1">
+						<div class="four-text1"><p>Experience</p>
+							<div class="exp-line"></div>
+						</div>
+						<div class="four-lines">
+							<div class="fourth-num"><p>1985-1990</p><div class="circle"></div></div>
+								<div class="fourth-line"></div>
+							<div class="fourth-num2"><p>1990-1997</p><div class="circle"></div></div>
+								<div class="fourth-line"></div>
+							<div class="fourth-num3"><p>1997-2017 </p><div class="circle"></div></div>
+						</div>
+					</div>
+
+					<div class="fourth-part2">
+						<div class="little-text"><p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed.</p></div>
+							<div class="experience">
+								<div class="exp-s">
+									<div class="name"><p>Lucaz Film</p></div>
+									<div class="position"><p>Gerneral Crew</p></div>
+										<div class="description"><p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his good dream</p></div>
+								</div>
+								<div class="exp-s">
+									<div class="name"><p>Abrize Studio</p></div>
+									<div class="position"><p>Art Director </p></div>
+										<div class="description"><p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his good dream</p></div>
+								</div>
+								<div class="exp-s">
+									<div class="name"><p>Allen Film</p></div>
+									<div class="position"><p>Film Director</p></div>
+										<div class="description"><p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his good dream</p></div>
+								</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
 			<div class="section"><h1>section 5</h1></div>
 			<div class="section1"><h1>section 6</h1></div>
 			<div class="section" id="page7"></div>
@@ -200,7 +235,8 @@
 	$(window).on("scroll", function() {
 		let header = document.getElementById('header');
 		if($(window).scrollTop() > 500) {
-			header.style.background = "#000000";
+			// header.style.background = "#000000";
+			header.style.background = "transparent";
 		} else {
 			header.style.background = "transparent";
 		}
