@@ -1,22 +1,71 @@
+$(window).on("scroll", function() {
+	let header = document.getElementById('header');
+	if($(window).scrollTop() > 500) {
+		// header.style.background = "#000000";
+		header.style.background = "transparent";
+	} else {
+		header.style.background = "transparent";
+	}
+});
 
 
 
+const config = {
+	type: "slider",
+	perView: 4,
+	breakpoints: {
+		800:{
+			perView: 1
+		}
+	},
+	bound: true,
+	startAt: 0,
+	gap: 40,
+}
+
+new Glide('.glide', config).mount();
 
 
-// window.onscroll = ()=>{
-// 	let header = document.getElementById('header');
-// 	if (window.scrollTop > 1000){
-// 		if (header.style.background === "#000000") {
-// 			header.style.background = "transparent";
-// 		} else {
-// 			header.style.background = "#000000";
-// 		}
-// 	console.log('done');
-// 	}
-// 	else{
-// 		console.log('fail');
-// 	}
-// }
+$('.fifth-slider').slick({
+
+	dots: true,
+	infinite: true,
+	speed: 300,
+	slidesToShow: 5,
+	slidesToScroll: 5,
+	arrows: false,
+	variableWidth: true,
+	adaptiveHeight: true,
+	responsive: [
+		{
+			breakpoint: 1024,
+			settings: {
+				slidesToShow: 3,
+				slidesToScroll: 3,
+				infinite: true,
+				dots: true
+			}
+		},
+		{
+			breakpoint: 600,
+			settings: {
+				slidesToShow: 2,
+				slidesToScroll: 2
+			}
+		},
+		{
+			breakpoint: 480,
+			settings: {
+				slidesToShow: 1,
+				slidesToScroll: 1
+			}
+		}
+		// You can unslick at a given breakpoint now by adding:
+		// settings: "unslick"
+		// instead of a settings object
+	]
+});
+
 
 function menuFunction() {
 	let getel = document.getElementsByClassName("mobile-menu-icon");

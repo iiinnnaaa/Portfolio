@@ -6,10 +6,14 @@
 	<link href="css/style.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/glide.core.min.css">
 	<link rel="stylesheet" href="css/glide.theme.min.css">
+
+	<link rel="stylesheet" href="./slick/slick.css">
+	<link rel="stylesheet" href="./slick/slick-theme.css">
+
 </head>
 <body>
-<script src="js/glide.min.js"></script>
-<script src="js/index.js" type="text/javascript"></script>
+<!--<script src="js/glide.min.js"></script>-->
+<!--<script src="js/index.js" type="text/javascript"></script>-->
 <div class="main">
 	<header id="header">
 		<div class="mobile-menu-icon" onclick="menuFunction()"><span></span></div>
@@ -27,7 +31,7 @@
 	</header>
 
 	<div class="content">
-     <div id="page1">
+      <div id="page1">
 		  <div class="first-page">
 					<div class="dot-nav">
 						<a class="dot-link dot-active" href="#/" onclick="scrollFunction(1, event)"></a>
@@ -165,8 +169,7 @@
 					</div>
 				</div>
 			</div>
-
-			<div class="section1" id="page4">
+			<div id="page4">
 				<div class="fourth-page">
 					<div class="fourth-part1">
 						<div class="four-text1"><p>Experience</p>
@@ -189,12 +192,12 @@
 									<div class="position"><p>Gerneral Crew</p></div>
 										<div class="description"><p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his good dream</p></div>
 								</div>
-								<div class="exp-s">
+								<div class="exp-s1">
 									<div class="name"><p>Abrize Studio</p></div>
 									<div class="position"><p>Art Director </p></div>
 										<div class="description"><p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his good dream</p></div>
 								</div>
-								<div class="exp-s">
+								<div class="exp-s2">
 									<div class="name"><p>Allen Film</p></div>
 									<div class="position"><p>Film Director</p></div>
 										<div class="description"><p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his good dream</p></div>
@@ -203,46 +206,62 @@
 					</div>
 				</div>
 			</div>
+			<div id="page5">
+				<div class="fifth-page">
+					<div class="fifth-text">
+						<p>My Lovely Brends</p>
+						<div class="fifth-line"></div>
+					</div>
+					<div class="fifth-slide">
+						<div class="fifth-slider">
+							<div class="fi-slide"><img src="img/logo1.png" class="fifth-logo" alt=""></div>
+							<div class="fi-slide"><img src="img/logo2.png" class="fifth-logo" alt=""></div>
+							<div class="fi-slide"><img src="img/logo3.png"  class="fifth-logo" alt=""></div>
+							<div class="fi-slide"><img src="img/logo4.png" class="fifth-logo" alt=""></div>
+							<div class="fi-slide"><img src="img/logo5.png"  class="fifth-logo" alt=""></div>
+							<div class="fi-slide"><img src="img/logo6.png"  class="fifth-logo" alt=""></div>
+							<div class="fi-slide"><img src="img/logo7.png" class="fifth-logo"  alt=""></div>
+							<div class="fi-slide"><img src="img/logo1.png" class="fifth-logo" alt=""></div>
+							<div class="fi-slide"><img src="img/logo2.png" class="fifth-logo" alt=""></div>
+							<div class="fi-slide"><img src="img/logo3.png"  class="fifth-logo" alt=""></div>
+							<div class="fi-slide"><img src="img/logo4.png" class="fifth-logo" alt=""></div>
+							<div class="fi-slide"><img src="img/logo5.png"  class="fifth-logo" alt=""></div>
+							<div class="fi-slide"><img src="img/logo6.png"  class="fifth-logo" alt=""></div>
+						</div>
 
-			<div class="section"><h1>section 5</h1></div>
-			<div class="section1"><h1>section 6</h1></div>
+					</div>
+				</div>
+			</div>
+			<div id="page6">
+				<div class="opacity-color"></div>
+<!--				<div class="sixth-page">-->
+<!--					<div class="sixth-cont">-->
+<!--						<div class="sixth-text1">-->
+<!--							<p>My Blog</p>-->
+<!--						</div>-->
+<!--						<div class="sixth-text2">-->
+<!--							<p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.</p>-->
+<!--							<a href="#">Read The Blog</a>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--					<div class="sixth-slide">-->
+<!--						-->
+<!--						-->
+<!--						-->
+<!--						-->
+<!--						-->
+<!--					</div>-->
+<!--				</div>-->
+
+			</div>
 			<div class="section" id="page7"></div>
 	</div>
 
 	<footer></footer>
 </div>
-
-
-<script type="text/javascript">
-	const config = {
-		type: "slider",
-		perView: 4,
-		breakpoints: {
-			800:{
-				perView: 1
-			}
-		},
-		bound: true,
-		startAt: 0,
-		gap: 40,
-	}
-
-	new Glide('.glide', config).mount();
-</script>
-
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script>
-	$(window).on("scroll", function() {
-		let header = document.getElementById('header');
-		if($(window).scrollTop() > 500) {
-			// header.style.background = "#000000";
-			header.style.background = "transparent";
-		} else {
-			header.style.background = "transparent";
-		}
-	});
-</script>
-
-
+<script src="js/glide.min.js"></script>
+<script src="slick/slick.min.js"></script>
+<script src="js/index.js" type="text/javascript"></script>
 </body>
 </html>
