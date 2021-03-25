@@ -961,7 +961,7 @@ transition: 0.3s ease;
 	background-repeat: no-repeat;
 	background-size: cover;
 	 background-attachment: fixed;
-	height: 843px;
+	height: 864px !important;
 	position: relative;
 	display: flex;
 }
@@ -971,16 +971,17 @@ transition: 0.3s ease;
 	bottom: 0;
 	left: 0;
 	right: 0;
-	background-color: rgba(0,0,0,0.5);
+	background-color: rgba(0,0,0,0.7);
 }
 
 .sixth-page{
 	width: 100%;
+	z-index: 1;
 }
 
 .sixth-cont{
 	margin-top: 210px;
-	margin-left: 84px;
+	margin-left: 85px;
 }
 
 .sixth-text1{
@@ -990,26 +991,209 @@ transition: 0.3s ease;
 .sixth-text1 > p {
 	font-family: 'Playfair Display', sans-serif;
 	font-size: 72px;
-	font-weight: 900;
+	font-weight: 800;
 	word-spacing: 3px;
 	letter-spacing: 0px;
+	color: white;
 }
 
 .sixth-text2{
 	font-family: 'Open Sans', sans-serif;
-	margin-top: -63px;
-	margin-left: 554px;
+	margin-top: -66px;
+	margin-left: 553px;
 	padding: 0px 200px 0 0;
 }
 
 .sixth-text2 > p {
 	font-size: 16px;
-	font-weight: 600;
-	color: black;
+	font-weight: 500;
+	color: white;
 	letter-spacing: 0.5px;
-	line-height: 26px;
+	line-height: 28px;
+	word-spacing: 0px;
 }
 
+.read-blog{
+	margin-top: 22px;
+	cursor: pointer;
+}
+
+.read-blog > a {
+	text-decoration: none;
+	letter-spacing: 0.5px;
+	font-size: 16px;
+	color: #8777df;
+	/*cursor: pointer;*/
+}
+
+.slide-text{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 138px;
+	max-width: 1440px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.blog-container{
+	width: 435px;
+	margin-left: 14px;
+	padding: 0px 0px 0 0;
+	margin-right: 24.3px;
+	color: white;
+	margin-top: 2px;
+}
+
+.blog-title{
+	font-family: 'Playfair Display', sans-serif;
+	font-weight: 800;
+	font-size: 30px;
+	word-spacing: 4px;
+}
+
+.blog-info{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	margin-top: 16px;
+	margin-left: -2px;
+	display: flex;
+}
+
+.blog-time{
+	margin: 0 26px 0 0;
+}
+
+.blog-time > p {
+	letter-spacing: 0.4px;
+}
+
+.blog-time > p > img {
+	width: 17px;
+	height: 17px;
+	margin: 0px 14px 0 0;
+	display: inline !important;
+}
+
+.blog-user > p {
+	letter-spacing: 1px;
+}
+
+.blog-user > p > img {
+	width: 15px;
+	height: 16px;
+	margin: 0 14px 0 0;
+	display: inline !important;
+
+}
+
+.blog-content{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	margin-top: 29px;
+	line-height: 27px;
+	letter-spacing: 0px;
+	word-spacing: 1.25px;
+}
+
+.blog-line{
+	width: 442px;
+	/*width: 342px;*/
+	height: 2px;
+	background: #694eea;
+	margin-top: 34px;
+	margin-bottom: 20px;
+}
+
+#title-1{
+	letter-spacing: 0.1px;
+	margin-top: 0px;
+}
+
+#content-1{
+	letter-spacing: 0px;
+	margin-top: 26px;
+	margin-left: 0px;
+	line-height: 28px;
+	word-spacing: 2.5px;
+}
+
+#title-2{
+	margin-top: 0px;
+	margin-left: 5px;
+	/*letter-spacing: 0.px;*/
+	line-height: 39px;
+}
+
+#time-2 {
+	margin-top: 2px;
+	margin-left: 6px;
+}
+
+#user-2 {
+	margin-top: 2px;
+}
+
+#content-2{
+	margin-top: 28px;
+	margin-left: 5px;
+	line-height: 28.5px;
+	letter-spacing: 0.3px;
+}
+
+#line-2{
+	margin-left: 6px;
+}
+
+#title-3{
+	margin-left: 10px;
+	margin-top: 1px;
+	letter-spacing: 1px;
+	word-spacing: -3px;
+	line-height: 39px;
+}
+
+#time-3{
+	margin-left: 11px;
+	margin-top: 1px;
+}
+
+#user-3{
+	margin-top: 1px;
+	margin-left: -1px;
+}
+
+#content-3{
+	margin-left: 11px;
+	margin-top: 27px;
+	line-height: 28px;
+	letter-spacing: 0.px;
+	word-spacing: 3px;
+}
+
+#line-3{
+	margin-left: 12px;
+}
+
+.sixth-arrows{
+	width: 70px;
+	display: flex;
+	justify-content: space-between;
+	margin-left: 1305px;
+	margin-top: -100px;
+}
+
+
+.left-arrow > img, .right-arrow > img {
+	width: 45px;
+	height: 45px;
+	cursor: pointer;
+}
+
+.left-arrow{
+	margin: 0 10px;
+}
 
 #page7{
 	background-color: #5429c5;
@@ -1020,7 +1204,182 @@ transition: 0.3s ease;
 	height: 843px;
 }
 
+.sev-section{
+	display: flex;
+	justify-content: space-between;
+}
+
+.sev-contacts{
+	margin-top: 189px;
+	margin-left: 86px;
+}
+
+.sev-cont > p {
+	font-size: 71px;
+	font-family: 'Playfair Display', sans-serif;
+	font-weight: 700;
+	letter-spacing: 2px;
+	color: white;
+}
+
+.sev-address{
+	margin-top: 63px;
+	margin-left: 11px;
+}
+
+.sev-address > p {
+	font-size: 17px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 500;
+	color: wheat;
+	letter-spacing: 0.5px;
+}
+
+.sev-address > p > img {
+	width: 20px;
+	height: 19px;
+}
+
+.sev-num{
+	margin-top: 33px;
+	margin-left: 0;
+}
+
+.sev-num > p {
+	font-size: 17px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+	color: wheat;
+}
+
+.sev-num > p > img {
+	width: 20px;
+	height: 20px;
+}
+
+.sev-mail{
+	margin-top: 25px;
+	margin-left: 5px;
+	cursor: pointer;
+}
+
+.sev-mail > a {
+	font-size: 17px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 500;
+	text-decoration: none;
+	color: wheat;
+	letter-spacing: 0.5px;
+}
+
+.sev-mail > img {
+	width: 28px;
+	height: 28px;
+}
+
+.sev-social{
+	margin-left: -7px;
+	margin-top: 61px;
+	display: flex;
+	justify-content: space-between;
+	width: 197px;
+}
+
+.sev-social > img {
+	width: 27px;
+	height: 27px;
+	cursor: pointer;
+}
+
+#fb {
+	width: 24px;
+}
+
+.sev-forms{
+	width: 64%;
+	margin-top: 208px;
+}
+
+#full-name{
+	width: 928px;
+	background: transparent;
+	border: none;
+	border-bottom: 3px solid wheat;
+	padding: 0 0 17px 0;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#email{
+	margin-top: 40px;
+	width: 928px;
+	background: transparent;
+	border: none;
+	border-bottom: 3px solid wheat;
+	padding: 0 0 15px 0;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 0.6px;
+}
+
+#subject{
+	width: 928px;
+	margin-top: 39px;
+	background: transparent;
+	border: none;
+	border-bottom: 3px solid wheat;
+	padding: 0 0 17px 0;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 0.6px;
+}
+
+#message{
+	width: 928px;
+	margin-top: 44px;
+	background: transparent;
+	border: none;
+	border-bottom: 3px solid wheat;
+	padding: 0 0 15px 0;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 0.6px;
+	color: wheat;
+}
+
+.sev-forms > input::placeholder, .sev-forms > textarea::placeholder{
+	color: white;
+}
+
+.sev-forms > button {
+	margin-top: 18px;
+	width: 188px;
+	height: 63px;
+	font-size: 14.5px;
+	font-weight: 700;
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #472ad9;
+}
+
 footer{
-	height: 99px;
-	background-color: #121212;
+height: 99px;
+background-color: #121212;
+}
+
+.footer{
+	display: flex;
+	justify-content: center;
+}
+
+.footer > p {
+	color: #9b978f;
+	margin-top: 44px;
+	font-size: 14.5px;
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: 1.5px;
+	word-spacing: 0px;
+	font-weight: 300;
 }
