@@ -9,6 +9,30 @@ $(window).on("scroll", function() {
 });
 
 
+window.onscroll = function() {scrollFunction2()};
+
+function scrollFunction2() {
+		let nav = document.querySelectorAll(".dot-nav a");
+		let active = document.querySelector(".dot-active");
+		for(let i = 0; i < nav.length; i++){
+			if ( document.documentElement.scrollTop > 2600 && document.documentElement.scrollTop < 4200) {
+			nav[i].style.backgroundColor = "#00000055";
+			nav[i].style.borderColor = "#00000055";
+			active.classList.add('dot-active-before');
+		 // document.styleSheets[0].addRule('.dot-active::before','border: 1px solid #00000055');
+			active.style.backgroundColor = "#00000055";
+		}
+			else{
+				nav[i].style.backgroundColor = "#ffffff5c";
+				active.classList.remove('dot-active-before');
+				nav[i].style.borderColor = "#ffffff5c";
+				// document.styleSheets[0].addRule('.dot-active::before','border: 1px solid #ffffff5c');
+				active.style.backgroundColor = "#ffffff5c";
+			}
+	}
+}
+
+
 
 const config = {
 	type: "slider",
@@ -39,10 +63,9 @@ $('.fifth-slider').slick({
 		{
 			breakpoint: 1024,
 			settings: {
-				slidesToShow: 3,
-				slidesToScroll: 3,
+				slidesToShow: 2,
+				slidesToScroll: 2,
 				infinite: true,
-				dots: true
 			}
 		},
 		{
@@ -105,7 +128,6 @@ $('.slide-text').slick({
 });
 
 
-
 function menuFunction() {
 	let getel = document.getElementsByClassName("mobile-menu-icon");
 	getel[0].classList.toggle('clicked');
@@ -121,20 +143,51 @@ function menuFunction() {
 
 function scrollFunction(id, event) {
 		addClass(id, event);
-		let windowHeight = 7 * window.innerHeight;
-		let calc = windowHeight * ((id - 1) / 5);
-		let fin = calc + 3;
-		if (id === 1) {
+		// let windowHeight = 7 * window.innerHeight;
+		// let calc = windowHeight * ((id - 1) / 5.1);
+		// let fin = calc + 3;
+	if (id === 1) {
 			window.scrollTo({
 				top: 0,
 				behavior: "smooth",
 			})
-		} else {
-			window.scrollTo({
-				top: fin,
-				behavior: "smooth",
-			})
 		}
+	if (id === 2) {
+		window.scrollTo({
+			top: 972,
+			behavior: "smooth",
+		})
+	}
+	if (id === 3) {
+		window.scrollTo({
+			top: 2033,
+			behavior: "smooth",
+		})
+	}
+	if (id === 4) {
+		window.scrollTo({
+			top: 3046,
+			behavior: "smooth",
+		})
+	}
+	if (id === 5) {
+		window.scrollTo({
+			top: 4745,
+			behavior: "smooth",
+		})
+	}
+	if (id === 6) {
+		window.scrollTo({
+			top: 5600,
+			behavior: "smooth",
+		})
+	}
+		// else {
+		// 	window.scrollTo({
+		// 		top: fin,
+		// 		behavior: "smooth",
+		// 	})
+		// }
 	}
 
 	function addClass(id, event){
