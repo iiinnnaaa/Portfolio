@@ -33,21 +33,28 @@ function scrollFunction2() {
 }
 
 
+//
+// const config = {
+// 	type: "slider",
+// 	perView: 4,
+// 	breakpoints: {
+// 		800:{
+// 			perView: 1
+// 		}
+// 	},
+// 	bound: true,
+// 	startAt: 0,
+// 	gap: 40,
+// }
+//
+// new Glide('.glide', config).mount();
 
-const config = {
-	type: "slider",
-	perView: 4,
-	breakpoints: {
-		800:{
-			perView: 1
-		}
-	},
-	bound: true,
-	startAt: 0,
-	gap: 40,
-}
 
-new Glide('.glide', config).mount();
+$('.works-slider').slick({
+	dots: true,
+	slidesToShow: 2,
+	arrows: false,
+});
 
 
 $('.fifth-slider').slick({
