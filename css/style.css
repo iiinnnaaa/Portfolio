@@ -1035,12 +1035,16 @@ transition: 0.3s ease;
 }
 
 .sixth-cont{
+	width: 95%;
+	display: block;
+	justify-content: space-between;
 	margin-top: 210px;
-	margin-left: 85px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .sixth-text1{
-
+	margin-left: 2.9%;
 }
 
 .sixth-text1 > p {
@@ -1055,7 +1059,7 @@ transition: 0.3s ease;
 .sixth-text2{
 	font-family: 'Open Sans', sans-serif;
 	margin-top: -66px;
-	margin-left: 553px;
+	margin-left: 39.7%;
 	padding: 0px 200px 0 0;
 }
 
@@ -1093,8 +1097,8 @@ transition: 0.3s ease;
 
 .blog-container{
 	width: 435px;
-	margin-left: 14px;
-	padding: 0px 0px 0 0;
+	margin-left: 4px;
+	padding: 0px 0px 0 10px;
 	margin-right: 24.3px;
 	color: white;
 	margin-top: 2px;
@@ -1223,7 +1227,7 @@ transition: 0.3s ease;
 	margin-left: 11px;
 	margin-top: 27px;
 	line-height: 28px;
-	letter-spacing: 0.px;
+	letter-spacing: 0;
 	word-spacing: 3px;
 }
 
@@ -1235,8 +1239,8 @@ transition: 0.3s ease;
 	width: 70px;
 	display: flex;
 	justify-content: space-between;
-	margin-left: 1305px;
-	margin-top: -100px;
+	margin-left: 89.7%;
+	margin-top: -6.5%;
 }
 
 
@@ -1267,7 +1271,7 @@ transition: 0.3s ease;
 .sev-contacts{
 	width: 25%;
 	margin-top: 189px;
-	margin-left: 86px;
+	margin-left: 5.4%;
 }
 
 .sev-cont > p {
@@ -1445,4 +1449,139 @@ background-color: #121212;
 	letter-spacing: 1.5px;
 	word-spacing: 0px;
 	font-weight: 300;
+}
+
+@media only screen and (max-width: 767px) {
+	.second-page{
+		width: 100% !important;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.sixth-arrows{
+		display: none !important;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: 0;
+	}
+	.slide-text{
+		width: 92%;
+		margin-top: 7% !important;
+	}
+}
+
+@media only screen and (max-width: 1145px) {
+	.dot-nav{
+		display: none;
+	}
+}
+
+
+@media only screen and (max-width: 1400px) {
+
+	#page4{
+		height: 100%;
+	}
+
+	.fourth-page {
+		width: 100%;
+		margin: auto;
+	}
+
+	.fourth-part1 {
+		display: block;
+		width: 30%;
+		height: 100%;
+		margin-top: 131px;
+		margin-left: 84px;
+	}
+
+	.four-text1 {
+		font-size: 72px;
+		font-weight: 800;
+		font-family: 'Playfair Display', sans-serif;
+		letter-spacing: 1px;
+	}
+
+	.four-lines {
+		width: 180px;
+		height: 500px;
+		padding: 10px;
+		margin-top: 75%;
+		margin-left: 10px;
+		font-size: 21px;
+		font-weight: 900;
+		font-family: 'Open Sans', sans-serif;
+	}
+
+	.fourth-part2 {
+		font-family: 'Open Sans', sans-serif;
+		margin-top: 28%;
+		margin-left: -32%;
+		margin-bottom: 10%;
+	}
+
+	.little-text {
+		line-height: 29.9px;
+		font-size: 16px;
+		font-weight: 400;
+		word-spacing: -1px;
+		letter-spacing: 0.7px;
+		width: 50%;
+		min-width: 30%;
+		margin-top: -1;
+		margin-left: 3%;
+		padding: 0;
+	}
+
+	.experience {
+		margin-top: 6%;
+		margin-left: 32%;
+	}
+
+	.description {
+		width: 85%;
+		font-size: 21px;
+		font-weight: 600;
+		margin-top: 4px;
+		letter-spacing: 0.7px;
+		line-height: 36px;
+		padding: 0;
+	}
+
+	.exp-s1 {
+		margin-top: 8%;
+	}
+
+	.exp-s2 {
+		margin-top: 8%;
+	}
+
+  .sixth-text1{
+	  width: 30%;
+	  margin-left: 2.9%;
+  }
+
+	.sixth-text2{
+		width: 80%;
+		font-family: 'Open Sans', sans-serif;
+		margin-top: 2%;
+		margin-left: 3%;
+		padding: 0;
+	}
+
+	.sixth-arrows{
+		width: 7%;
+		display: flex;
+		justify-content: space-between;
+		margin-left: 85.7%;
+		margin-top: -18%;
+	}
+
+	.slide-text{
+		width: 92%;
+		margin-top: 18%;
+	}
 }
