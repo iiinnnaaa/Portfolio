@@ -674,7 +674,7 @@ padding: 10px;
 }
 
 .work{
-	color: wheat;
+	color: white;
 	font-size: 72px;
 	margin-top: 46px;
 	margin-left: 25px;
@@ -684,7 +684,7 @@ padding: 10px;
 }
 
 .third-text2{
-	color: wheat;
+	color: white;
 	width: 653px;
 	font-size: 16px;
 	font-family: "Open Sans", sans-serif;
@@ -1487,6 +1487,49 @@ background-color: #121212;
 
 	.first-logo{
 		width: 65%;
+	}
+
+	#page3{
+		height: 100%;
+		width: 100%;
+	}
+
+	.third-page{
+		height: 100%;
+		display: initial;
+	}
+
+	.third-cont{
+		width: 85% !important;
+		display: block;
+		margin: 0;
+	}
+
+	.third-text1{
+		width: 100%;
+		margin: 15% 10%;
+	}
+
+	.line2{
+		margin: 0;
+	}
+
+	.work{
+		margin: 0;
+	}
+
+	.third-text2{
+		width: 85%;
+		margin: 5% 15%;
+	}
+
+	.works-arrows{
+		display: none;
+	}
+
+	.third-slide{
+		width: 100%;
+		margin: 70% 0 10% 0;
 	}
 
 	#page4 {
