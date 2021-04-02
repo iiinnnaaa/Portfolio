@@ -1658,7 +1658,7 @@ background-color: #121212;
 
 }
 
-@media only screen and (max-width: 1000px) {
+@media (max-width: 1000px) {
 	.sixth-arrows{
 		display: none !important;
 		top: 0;
@@ -1673,14 +1673,14 @@ background-color: #121212;
 	}
 }
 
-@media only screen and (max-width: 1145px) {
+@media (max-width: 1145px) {
 	.dot-nav{
 		display: none;
 	}
 }
 
 
-@media only screen and (max-width: 1400px) {
+@media (max-width: 1400px) {
 
 	#page2{
 		height: 100%;
