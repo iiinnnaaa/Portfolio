@@ -953,6 +953,10 @@ transition: 0.3s ease;
 	margin-top: 67px;
 }
 
+.f-time{
+	display: none;
+}
+
 #page5{
 	height: 621px;
 	background: #532ad5;
@@ -1455,6 +1459,203 @@ background-color: #121212;
 	.second-page{
 		width: 100% !important;
 	}
+
+	#page1 {
+		width: 100%;
+		height: 100%;
+	}
+
+	.first-page{
+		width: 100%;
+		height: 100%;
+		display: initial;
+	}
+
+	.page-bg-photo {
+		width: 100%;
+		height: 400px;
+	}
+
+	.page-back{
+		width: 100%;
+		height: 100%;
+	}
+
+	.information{
+		margin: 10%;
+	}
+
+	.first-logo{
+		width: 65%;
+	}
+
+	#page4 {
+		height: 100% !important;
+	}
+
+	.fourth-page {
+		display: initial;
+		width: 100%;
+		margin: auto;
+	}
+
+	.fourth-part1 {
+		display: block;
+		width: 70% !important;;
+		height: 100%;
+		margin: 25% 10% 13% 10% !important;;
+	}
+
+	.four-text1 {
+		font-size: 45px  !important;
+		font-weight: 800  !important;
+		font-family: 'Playfair Display', sans-serif  !important;
+		letter-spacing: 1px  !important;
+	}
+
+	.exp-line {
+		width: 80px;
+		height: 2px;
+		background: #5429c4;
+		margin: 0% 62%;
+	}
+
+	.fourth-part2 {
+		margin: 3% 10% !important;
+		width: 80% !important;
+		height: auto;
+	}
+
+	.f-time{
+		display: initial;
+		font-size: 21px;
+		font-weight: 900;
+		font-family: 'Open Sans', sans-serif;
+	}
+
+	.little-text {
+		font-size: 15px !important;
+		width: 93% !important;
+		padding: 0;
+		margin: 0 !important;
+	}
+
+	.experience {
+		margin: 30% 1% !important;
+	}
+
+	.name{
+		margin-top: 3%;
+	}
+
+	.exp-s1, .exp-s2{
+		margin-top: 20% !important;
+	}
+
+	.four-lines{
+		display: none;
+	}
+
+
+
+	#page5 {
+		height: 100%;
+		background: #532ad5;
+		display: flex;
+	}
+
+	.fifth-page {
+		width: 90%;
+		height: 100%;
+		margin: auto;
+		display: initial;
+	}
+
+	.fifth-text {
+		text-align: center;
+		margin-top: 10%;
+		margin-left: 0;
+	}
+
+	.fifth-line{
+		margin-left: 40%;
+		margin-top: 3%;
+	}
+
+	.fifth-slide{
+		margin: 20% 0;
+	}
+
+
+	#page6{
+		height: 100% !important;
+	}
+
+	.sixth-slide{
+		margin-bottom: 7%;
+	}
+
+	.blog-line{
+		width: 100%;
+	}
+
+
+	#page7{
+		display: flex;
+		height: 100%  ;
+	}
+
+	.sev-section{
+		display: initial;
+		height: 100%;
+		padding: 5%;
+	}
+
+	.sev-contacts{
+		width: 100%;
+		margin: 5% auto;
+	}
+
+	.sev-address{
+		margin: 10% 2%;
+	}
+
+	.sev-num, .sev-mail{
+		margin: 10% 3%;
+	}
+
+	.sev-social{
+		width: 30%;
+		margin: 10% 3%;
+	}
+
+	.sev-forms{
+		width: 100%;
+		margin: 0 3% 10% 3%;
+	}
+
+	.sev-forms > button{
+		margin-top: 3%;
+	}
+
+	footer {
+		height: 99px;
+		background-color: #121212;
+		display: flex;
+	}
+
+	.footer {
+		display: initial;
+		width: 65%;
+		margin: 5.5% auto;
+		height: 45%;
+		text-align: center;
+	}
+
+	.footer > p {
+		margin: 0;
+	}
+
 }
 
 @media only screen and (max-width: 1000px) {
@@ -1480,6 +1681,37 @@ background-color: #121212;
 
 
 @media only screen and (max-width: 1400px) {
+
+	#page2{
+		height: 100%;
+	}
+
+	.second-text{
+		width: 100%;
+		padding: 5%;
+		margin-bottom: 7%;
+	}
+
+	.sec-text1{
+		margin: 5% auto;
+		width: 90%;
+		display: flex;
+	}
+
+	.sec-text2{
+		width: 90%;
+		margin: 10% auto;
+	}
+
+	.sec-text3{
+		width: 90%;
+		margin: 3% auto;
+	}
+
+	.skill-bars{
+		width: 90%;
+		margin: 7% auto;
+	}
 
 	#page4{
 		height: 100%;
@@ -1560,7 +1792,7 @@ background-color: #121212;
 	}
 
   .sixth-text1{
-	  width: 30%;
+	  width: 50%;
 	  margin-left: 2.9%;
   }
 
