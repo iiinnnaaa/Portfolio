@@ -612,7 +612,7 @@ padding: 10px;
 
 
 .second-bg-photo{
-	background-image: url("../img/Inna2.jpg");
+	background-image: url("../img/Inna2.jpeg");
 	width: 50%;
 	height: 100%;
 	background-repeat: no-repeat;
@@ -1004,7 +1004,7 @@ transition: 0.3s ease;
 #page6{
 	width: 100%;
 	/*background-image: url(../img/second-section.jpg);*/
-	background-image: url(../img/Inna3.jpg);
+	background-image: url(../img/Inna6.jpeg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	 background-attachment: fixed;
