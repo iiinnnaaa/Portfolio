@@ -180,20 +180,7 @@ header{
 }
 
 
-.section {
-	width: 100%;
-	height: 100vh;
-}
 
-.section:first-child{
-	/*margin-top: 63px;*/
-}
-
-.section1 {
-	background-color: #dbe20d;
-	width: 100%;
-	height: 100vh;
-}
 
 
 /*-----menu-----*/
@@ -290,7 +277,8 @@ header{
 .page-bg-photo{
 	width: 50%;
 	height: 100%;
-	background-image: url('../img/first-section.jpg');
+	/*background-image: url('../img/first-section.jpg');*/
+	background-image: url('../img/Inna.jpeg');
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -395,20 +383,10 @@ header{
 }
 
 #page2{
-	/*!*background-image: url("https://wallpapercave.com/wp/wp1619692.jpg");*!*/
-	/*width: 100%;*/
-	/*height: 1061px;*/
-	/*background: white;*/
-	/*background-repeat: no-repeat;*/
-	/*background-size: cover;*/
-	/*background-attachment: fixed;*/
-
 	width: 100%;
 	height: 1061px;
-	background-image: url("../img/second-section.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
+	display: flex;
+	justify-content: space-between;
 }
 
 .second-page{
@@ -511,7 +489,7 @@ padding: 10px;
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
 	border: 1px solid #5429c5;
-	width: 92%;
+	width: 80%;
 	height: 5px;
 	margin-top: -7px;
 	background-color: #5429c5;
@@ -525,8 +503,8 @@ padding: 10px;
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
 	border: 1px solid #5429c5;
-	width: 82.1%;
-	height: 4px;
+	width: 70%;
+	height: 5px;
 	margin-top: -7px;
 	background-color: #5429c5;
 	position: relative;
@@ -539,9 +517,9 @@ padding: 10px;
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
 	border: 1px solid #5429c5;
-	width: 87.2%;
-	height: 4px;
-	margin-top: -6px;
+	width: 35%;
+	height: 5px;
+	margin-top: -7px;
 	background-color: #5429c5;
 	position: relative;
 	animation-timing-function: ease;
@@ -549,13 +527,13 @@ padding: 10px;
 	animation-duration: 6s;
 }
 
-.progress-line-5{
+.progress-line-5 {
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 5px;
 	border: 1px solid #5429c5;
-	width: 67.9%;
-	height: 3px;
-	margin-top: -6px;
+	width: 55%;
+	height: 5px;
+	margin-top: -7px;
 	background-color: #5429c5;
 	position: relative;
 	animation-timing-function: ease;
@@ -610,28 +588,36 @@ padding: 10px;
 
 @keyframes animation {
 	0%   {background-color:#c3c3c3; 	width: 0;}
-	20%  {background-color:#5429c5; 	width: 92%;
+	20%  {background-color:#5429c5; 	width: 80%;
 	}
 }
 
 @keyframes animation2 {
 	0%   {background-color:#c3c3c3; 	width: 0;}
-	20%  {background-color:#5429c5; 	width: 82.1%;
+	20%  {background-color:#5429c5; 	width: 70%;
 	}
 }
 
 @keyframes animation3 {
 	0%   {background-color:#5429c5; 	width: 0;}
-	20%  {background-color:#5429c5; 	width: 87.2%;
+	20%  {background-color:#5429c5; 	width: 35%;
 	}
 }
 
 @keyframes animation4 {
 	 0%   {background-color:#5429c5; 	width: 0;}
-	 20%  {background-color:#5429c5; 	width: 67.9%;
+	 20%  {background-color:#5429c5; 	width: 55%;
 	 }
  }
 
+
+.second-bg-photo{
+	background-image: url("../img/Inna2.jpg");
+	width: 50%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 
 
 
@@ -821,7 +807,7 @@ transition: 0.3s ease;
 #page4{
 	background-color: #ffffff;
 	width: 100%;
-	height: 1065px;
+	/*height: 1065px;*/
 }
 
 .fourth-page{
@@ -904,6 +890,7 @@ transition: 0.3s ease;
 	font-weight: 400;
 	word-spacing: -1px;
 	letter-spacing: 0.7px;
+	height: 11%;
 }
 
 .experience{
@@ -1016,7 +1003,8 @@ transition: 0.3s ease;
 
 #page6{
 	width: 100%;
-	background-image: url(../img/second-section.jpg);
+	/*background-image: url(../img/second-section.jpg);*/
+	background-image: url(../img/Inna3.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	 background-attachment: fixed;
@@ -1288,14 +1276,15 @@ transition: 0.3s ease;
 
 .sev-address{
 	margin-top: 63px;
-	margin-left: 11px;
+	margin-left: 0;
+	cursor: pointer;
 }
 
 .sev-address > p {
 	font-size: 17px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 500;
-	color: wheat;
+	color: white;
 	letter-spacing: 0.5px;
 }
 
@@ -1314,7 +1303,7 @@ transition: 0.3s ease;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 500;
 	letter-spacing: 0.5px;
-	color: wheat;
+	color: white;
 }
 
 .sev-num > p > img {
@@ -1333,7 +1322,7 @@ transition: 0.3s ease;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 500;
 	text-decoration: none;
-	color: wheat;
+	color: white;
 	letter-spacing: 0.5px;
 }
 
@@ -1343,7 +1332,7 @@ transition: 0.3s ease;
 }
 
 .sev-social{
-	margin-left: -7px;
+	margin-left: 0;
 	margin-top: 61px;
 	display: flex;
 	justify-content: space-between;
@@ -1369,7 +1358,7 @@ transition: 0.3s ease;
 	width: 91.5%;
 	background: transparent;
 	border: none;
-	border-bottom: 3px solid wheat;
+	border-bottom: 3px solid white;
 	padding: 0 0 17px 0;
 	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
@@ -1380,7 +1369,7 @@ transition: 0.3s ease;
 	width: 91.5%;
 	background: transparent;
 	border: none;
-	border-bottom: 3px solid wheat;
+	border-bottom: 3px solid white;
 	padding: 0 0 15px 0;
 	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
@@ -1392,7 +1381,7 @@ transition: 0.3s ease;
 	margin-top: 39px;
 	background: transparent;
 	border: none;
-	border-bottom: 3px solid wheat;
+	border-bottom: 3px solid white;
 	padding: 0 0 17px 0;
 	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
@@ -1404,12 +1393,12 @@ transition: 0.3s ease;
 	margin-top: 44px;
 	background: transparent;
 	border: none;
-	border-bottom: 3px solid wheat;
+	border-bottom: 3px solid white;
 	padding: 0 0 15px 0;
 	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
 	letter-spacing: 0.6px;
-	color: wheat;
+	color: white;
 	resize: none;
 }
 
@@ -1727,6 +1716,14 @@ background-color: #121212;
 
 	#page2{
 		height: 100%;
+	}
+
+	.second-page{
+		width: 100%;
+	}
+
+	.second-bg-photo{
+		display: none;
 	}
 
 	.second-text{
