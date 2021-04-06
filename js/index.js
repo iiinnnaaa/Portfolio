@@ -9,7 +9,19 @@ $(window).on("scroll", function() {
 });
 
 
-window.onscroll = function() {scrollFunction2()};
+let menuItems = document.querySelectorAll('.menu-links a');
+for(let i = 0; i < menuItems.length; i++){
+	menuItems[i].addEventListener("click", menuFunction);
+}
+
+
+window.onscroll = function() {
+	changeNavColor();
+	scrollFunction2();
+};
+
+
+
 
 function scrollFunction2() {
 		let nav = document.querySelectorAll(".dot-nav a");
@@ -31,23 +43,6 @@ function scrollFunction2() {
 			}
 	}
 }
-
-
-//
-// const config = {
-// 	type: "slider",
-// 	perView: 4,
-// 	breakpoints: {
-// 		800:{
-// 			perView: 1
-// 		}
-// 	},
-// 	bound: true,
-// 	startAt: 0,
-// 	gap: 40,
-// }
-//
-// new Glide('.glide', config).mount();
 
 
 $('.works-slider').slick({
@@ -73,9 +68,6 @@ $('.works-slider').slick({
 				slidesToScroll: 1,
 			}
 		}
-		// You can unslick at a given breakpoint now by adding:
-		// settings: "unslick"
-		// instead of a settings object
 	]
 
 });
@@ -114,13 +106,10 @@ $('.fifth-slider').slick({
 				slidesToScroll: 1
 			}
 		}
-		// You can unslick at a given breakpoint now by adding:
-		// settings: "unslick"
-		// instead of a settings object
 	]
 });
 
-//
+
 $('.slide-text').slick({
 	dots: false,
 	prevArrow: '.left-arrow',
@@ -151,11 +140,11 @@ $('.slide-text').slick({
 
 
 function menuFunction() {
-	let getel = document.getElementsByClassName("mobile-menu-icon");
-	getel[0].classList.toggle('clicked');
+	let getElements = document.getElementsByClassName("mobile-menu-icon");
+	getElements[0].classList.toggle('clicked');
 
-	let elems = document.getElementsByClassName("header-nav");
-	let elem = elems[0];
+	let elements = document.getElementsByClassName("header-nav");
+	let elem = elements[0];
 	if (elem.style.visibility === "visible") {
 		elem.style.visibility = "hidden";
 	} else {
@@ -164,7 +153,7 @@ function menuFunction() {
 }
 
 function scrollFunction(id, event) {
-		addClass(id, event);
+		addClass(event);
 		// let windowHeight = 7 * window.innerHeight;
 		// let calc = windowHeight * ((id - 1) / 5.1);
 		// let fin = calc + 3;
@@ -172,47 +161,87 @@ function scrollFunction(id, event) {
 			window.scrollTo({
 				top: 0,
 				behavior: "smooth",
-			})
+			});
 		}
 	if (id === 2) {
 		window.scrollTo({
-			top: 872,
+			top: 832,
 			behavior: "smooth",
-		})
+		});
 	}
 	if (id === 3) {
 		window.scrollTo({
-			top: 2000,
+			top: 1895,
 			behavior: "smooth",
 		})
 	}
 	if (id === 4) {
 		window.scrollTo({
-			top: 3000,
+			top: 2909,
 			behavior: "smooth",
 		})
 	}
 	if (id === 5) {
 		window.scrollTo({
-			top: 4545,
+			top: 4390,
 			behavior: "smooth",
 		})
 	}
 	if (id === 6) {
 		window.scrollTo({
-			top: 5300,
+			top: 5254,
 			behavior: "smooth",
 		})
 	}
-		// else {
-		// 	window.scrollTo({
-		// 		top: fin,
-		// 		behavior: "smooth",
-		// 	})
-		// }
 	}
 
-	function addClass(id, event){
+
+function changeNavColor(){
+	let nav = document.querySelectorAll(".dot-nav a");
+		if ( document.documentElement.scrollTop < 832){
+			nav[0].classList.add('dot-active');
+		}
+		else{
+			nav[0].classList.remove('dot-active');
+		}
+		if (document.documentElement.scrollTop > 832 && document.documentElement.scrollTop < 1895){
+		nav[1].classList.add('dot-active');
+	 }
+	 else{
+		nav[1].classList.remove('dot-active');
+	 }
+
+	if (document.documentElement.scrollTop > 1895 && document.documentElement.scrollTop < 2909){
+		nav[2].classList.add('dot-active');
+	}
+	else{
+		nav[2].classList.remove('dot-active');
+	}
+	if (document.documentElement.scrollTop > 2909 && document.documentElement.scrollTop < 4390){
+		nav[3].classList.add('dot-active');
+	}
+	else{
+		nav[3].classList.remove('dot-active');
+	}
+
+	if (document.documentElement.scrollTop > 4390 && document.documentElement.scrollTop < 5254){
+		nav[4].classList.add('dot-active');
+	}
+	else{
+		nav[4].classList.remove('dot-active');
+	}
+	if (document.documentElement.scrollTop > 5254){
+		nav[5].classList.add('dot-active');
+	}
+	else{
+		nav[5].classList.remove('dot-active');
+	}
+}
+
+
+
+
+function addClass(event){
 		let activeLink = document.getElementsByClassName('dot-active');
 
 		if(event.target.isSameNode(activeLink[0])){

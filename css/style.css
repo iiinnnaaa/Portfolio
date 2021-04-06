@@ -121,7 +121,7 @@ header{
 }
 
 .dot-nav a{
-	background-color: #ffffff;
+	background-color: rgba(255, 255, 255, 0.36);
 	cursor: pointer;
 	border: 1px solid #ffffff5c;
 	border-radius: 50%;
@@ -387,8 +387,7 @@ header{
 
 .second-text{
 	width: 100%;
-padding: 10px;
-
+	padding: 3% 1% 10% 1%;
 }
 
 .line{
@@ -399,8 +398,8 @@ padding: 10px;
 }
 
 .sec-text1{
-	margin-top: 103px;
-	margin-left: 72px;
+	margin-top: 15%;
+	margin-left: 11%;
 	display: flex;
 }
 
@@ -413,9 +412,7 @@ padding: 10px;
 }
 
 .sec-text2{
-	margin-top: 30px;
-	margin-left: 75px;
-	margin-right: 82px;
+	margin: 3% 11%;
 }
 
 .sec-text2 > p{
@@ -429,9 +426,7 @@ padding: 10px;
 }
 
 .sec-text3{
-	margin-top: 60px;
-	margin-left: 75px;
-	margin-right: 82px;
+	margin: 1% 11%;
 }
 
 .sec-text3 > p {
@@ -446,8 +441,8 @@ padding: 10px;
 .skill-bars{
 	font-family: "Playfair Display", sans-serif;
 	width: 80%;
-	margin: 55px 25px 0 75px;
 	height: 31%;
+	margin: 1% 11%;
 }
 
 .bar{
@@ -600,9 +595,9 @@ padding: 10px;
 .second-bg-photo{
 	background-image: url("../img/Inna2.jpeg");
 	width: 50%;
-	height: 100%;
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-position: 7%;
 }
 
 
@@ -1378,6 +1373,7 @@ transition: 0.3s ease;
 }
 
 .sev-forms > input:focus, .sev-forms > textarea:focus {
+	-webkit-text-fill-color: white;
 	color: white;
 	outline: none;
 }
@@ -1421,6 +1417,8 @@ background-color: #121212;
 	}
 
 
+
+
 	#page1 {
 		width: 100%;
 		height: 100%;
@@ -1453,6 +1451,48 @@ background-color: #121212;
 	.first-logo > img {
 		height: 28px;
 	}
+
+
+	#page2{
+		height: 100%;
+	}
+	.second-page{
+		width: 100%;
+	}
+
+	.second-bg-photo{
+		display: none;
+	}
+
+	.second-text{
+		width: 100%;
+		padding: 5%;
+		margin-bottom: 7%;
+	}
+
+	.sec-text1{
+		margin: 5% auto;
+		width: 90%;
+		display: flex;
+	}
+
+	.sec-text2{
+		width: 90%;
+		margin: 10% auto;
+	}
+
+	.sec-text3{
+		width: 90%;
+		margin: 3% auto;
+	}
+
+	.skill-bars{
+		width: 90%;
+		margin: 7% auto;
+	}
+
+
+
 
 	#page3{
 		height: 100%;
@@ -1667,6 +1707,10 @@ background-color: #121212;
 }
 
 @media (max-width: 1000px) {
+	.dot-nav{
+		display: none;
+	}
+
 	.sixth-arrows{
 		display: none !important;
 		top: 0;
@@ -1682,6 +1726,49 @@ background-color: #121212;
 }
 
 @media (max-width: 1145px) {
+
+	.second-bg-photo{
+		background-position: 30%;
+	}
+
+	/*#page2{*/
+	/*	height: 100%;*/
+	/*}*/
+	/*.second-page{*/
+	/*	width: 100%;*/
+	/*}*/
+
+	/*.second-bg-photo{*/
+	/*	display: none;*/
+	/*}*/
+
+	/*.second-text{*/
+	/*	width: 100%;*/
+	/*	padding: 5%;*/
+	/*	margin-bottom: 7%;*/
+	/*}*/
+
+	/*.sec-text1{*/
+	/*	margin: 5% auto;*/
+	/*	width: 90%;*/
+	/*	display: flex;*/
+	/*}*/
+
+	/*.sec-text2{*/
+	/*	width: 90%;*/
+	/*	margin: 10% auto;*/
+	/*}*/
+
+	/*.sec-text3{*/
+	/*	width: 90%;*/
+	/*	margin: 3% auto;*/
+	/*}*/
+
+	/*.skill-bars{*/
+	/*	width: 90%;*/
+	/*	margin: 7% auto;*/
+	/*}*/
+
 	.dot-nav{
 		display: none;
 	}
@@ -1692,41 +1779,6 @@ background-color: #121212;
 
 	#page2{
 		height: 100%;
-	}
-
-	.second-page{
-		width: 100%;
-	}
-
-	.second-bg-photo{
-		display: none;
-	}
-
-	.second-text{
-		width: 100%;
-		padding: 5%;
-		margin-bottom: 7%;
-	}
-
-	.sec-text1{
-		margin: 5% auto;
-		width: 90%;
-		display: flex;
-	}
-
-	.sec-text2{
-		width: 90%;
-		margin: 10% auto;
-	}
-
-	.sec-text3{
-		width: 90%;
-		margin: 3% auto;
-	}
-
-	.skill-bars{
-		width: 90%;
-		margin: 7% auto;
 	}
 
 	#page4{
@@ -1766,7 +1818,7 @@ background-color: #121212;
 
 	.fourth-part2 {
 		font-family: 'Open Sans', sans-serif;
-		margin-top: 28%;
+		/*margin-top: 28%;*/
 		margin-left: -32%;
 		margin-bottom: 10%;
 	}
@@ -1779,13 +1831,13 @@ background-color: #121212;
 		letter-spacing: 0.7px;
 		width: 50%;
 		min-width: 30%;
-		margin-top: -1;
+		margin-top: 15%;
 		margin-left: 3%;
 		padding: 0;
 	}
 
 	.experience {
-		margin-top: 6%;
+		margin-top: 11%;
 		margin-left: 32%;
 	}
 
@@ -1800,7 +1852,7 @@ background-color: #121212;
 	}
 
 	.exp-s1 {
-		margin-top: 8%;
+		margin-top: 10%;
 	}
 
 	.exp-s2 {
