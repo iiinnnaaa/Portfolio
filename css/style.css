@@ -1328,6 +1328,7 @@ transition: 0.3s ease;
 	padding: 0 0 17px 0;
 	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
+	color: white;
 }
 
 #email{
@@ -1340,6 +1341,7 @@ transition: 0.3s ease;
 	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
 	letter-spacing: 0.6px;
+	color: white;
 }
 
 #subject{
@@ -1352,6 +1354,7 @@ transition: 0.3s ease;
 	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
 	letter-spacing: 0.6px;
+	color: white;
 }
 
 #message{
@@ -1366,6 +1369,7 @@ transition: 0.3s ease;
 	letter-spacing: 0.6px;
 	color: white;
 	resize: none;
+	color: white;
 }
 
 .sev-forms > input::placeholder, .sev-forms > textarea::placeholder{
