@@ -1064,6 +1064,10 @@ color: white;
 margin-top: 2px;
 }
 
+.blog-container:focus{
+	outline: none;
+}
+
 .blog-title{
 font-family: 'Playfair Display', sans-serif;
 font-weight: 600;
@@ -1114,6 +1118,7 @@ margin-top: 29px;
 line-height: 27px;
 letter-spacing: 0px;
 word-spacing: 1.25px;
+	min-height: 84px;
 }
 
 .blog-line{
@@ -1439,6 +1444,15 @@ width: 100% !important;
 	margin: 5% auto;
 }
 
+.menu{
+	width: 75% !important;
+}
+
+.menu-links{
+	width: 100%;
+	border-bottom: 0.5px solid #ffffff;
+}
+
 #page1 {
 width: 100%;
 height: 100%;
@@ -1510,8 +1524,6 @@ margin: 3% auto;
 width: 90%;
 margin: 7% auto;
 }
-
-
 
 
 #page3{
@@ -1665,6 +1677,10 @@ height: 100% !important;
 .sixth-slide{
 margin-bottom: 7%;
 }
+
+	.blog-content{
+		min-height: 84px;
+	}
 
 .blog-line{
 width: 100%;
@@ -1906,5 +1922,9 @@ background-position: 30%;
 	.slide-text{
 		width: 92%;
 		margin-top: 18%;
+	}
+
+	.blog-content{
+		min-height: 140px;
 	}
 }
