@@ -165,31 +165,31 @@ function scrollFunction(id, event) {
 		}
 	if (id === 2) {
 		window.scrollTo({
-			top: 832,
+			top: 842,
 			behavior: "smooth",
 		});
 	}
 	if (id === 3) {
 		window.scrollTo({
-			top: 1895,
+			top: 1905,
 			behavior: "smooth",
 		})
 	}
 	if (id === 4) {
 		window.scrollTo({
-			top: 2909,
+			top: 2919,
 			behavior: "smooth",
 		})
 	}
 	if (id === 5) {
 		window.scrollTo({
-			top: 4390,
+			top: 4400,
 			behavior: "smooth",
 		})
 	}
 	if (id === 6) {
 		window.scrollTo({
-			top: 5254,
+			top: 5264,
 			behavior: "smooth",
 		})
 	}
