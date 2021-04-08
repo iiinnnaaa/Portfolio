@@ -9,7 +9,7 @@ $(window).on("scroll", function() {
 });
 
 
-let menuItems = document.querySelectorAll('.menu-links a');
+let menuItems = document.querySelectorAll('.menu-links');
 for(let i = 0; i < menuItems.length; i++){
 	menuItems[i].addEventListener("click", menuFunction);
 }
@@ -88,7 +88,6 @@ $('.fifth-slider').slick({
 			settings: {
 				slidesToShow: 2,
 				slidesToScroll: 2,
-				infinite: true,
 			}
 		},
 		{
@@ -100,8 +99,9 @@ $('.fifth-slider').slick({
 			}
 		},
 		{
-			breakpoint: 480,
+			breakpoint: 425,
 			settings: {
+				dots: false,
 				slidesToShow: 1,
 				slidesToScroll: 1
 			}
