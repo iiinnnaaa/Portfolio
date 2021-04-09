@@ -21,8 +21,6 @@ window.onscroll = function() {
 };
 
 
-
-
 function scrollFunction2() {
 		let nav = document.querySelectorAll(".dot-nav a");
 		let active = document.querySelector(".dot-active");
@@ -237,8 +235,6 @@ function changeNavColor(){
 		nav[5].classList.remove('dot-active');
 	}
 }
-
-
 
 
 function addClass(event){
