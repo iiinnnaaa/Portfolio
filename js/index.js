@@ -150,47 +150,66 @@ function menuFunction() {
 	}
 }
 
-function scrollFunction(id, event) {
-		addClass(event);
+
+let getMenuLinkItems = document.getElementsByClassName('menu-links');
+getMenuLinkItems[0].addEventListener("click", scrollFunction);
+
+function scrollFunction(event) {
+		// addClass(event);
+
+	let itTop = document.querySelectorAll('.menu-links a');
+
+	let item;
+	for(let i = 0; i < itTop.length; i++){
+		item = itTop[i].dataset.top;
+	}
+
+	console.log(item);
+
+		window.scrollTo({
+			top: item,
+			behavior: "smooth",
+		});
+
 		// let windowHeight = 7 * window.innerHeight;
 		// let calc = windowHeight * ((id - 1) / 5.1);
 		// let fin = calc + 3;
-	if (id === 1) {
-			window.scrollTo({
-				top: 0,
-				behavior: "smooth",
-			});
-		}
-	if (id === 2) {
-		window.scrollTo({
-			top: 842,
-			behavior: "smooth",
-		});
-	}
-	if (id === 3) {
-		window.scrollTo({
-			top: 1905,
-			behavior: "smooth",
-		})
-	}
-	if (id === 4) {
-		window.scrollTo({
-			top: 2919,
-			behavior: "smooth",
-		})
-	}
-	if (id === 5) {
-		window.scrollTo({
-			top: 4400,
-			behavior: "smooth",
-		})
-	}
-	if (id === 6) {
-		window.scrollTo({
-			top: 5264,
-			behavior: "smooth",
-		})
-	}
+	// if (id === 1) {
+	// 		window.scrollTo({
+	// 			top: 0,
+	// 			behavior: "smooth",
+	// 		});
+	// 	}
+	// if (id === 2) {
+	// 	window.scrollTo({
+	// 		top: 842,
+	// 		behavior: "smooth",
+	// 	});
+	// }
+	// if (id === 3) {
+	// 	window.scrollTo({
+	// 		top: 1905,
+	// 		behavior: "smooth",
+	// 	})
+	// }
+	// if (id === 4) {
+	// 	window.scrollTo({
+	// 		top: 2919,
+	// 		behavior: "smooth",
+	// 	})
+	// }
+	// if (id === 5) {
+	// 	window.scrollTo({
+	// 		top: 4400,
+	// 		behavior: "smooth",
+	// 	})
+	// }
+	// if (id === 6) {
+	// 	window.scrollTo({
+	// 		top: 5264,
+	// 		behavior: "smooth",
+	// 	})
+	// }
 	}
 
 

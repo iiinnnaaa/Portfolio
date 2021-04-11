@@ -954,6 +954,10 @@ height: 150px;
 cursor: pointer;
 }
 
+.fi-slide:focus{
+	outline: none;
+}
+
 .fi-slide{
 margin: 0 50px;
 }
@@ -1674,6 +1678,7 @@ margin-top: 3%;
 
 #page6{
 height: 100% !important;
+background-position: 45% 0%;
 }
 
 .sixth-slide{
