@@ -159,17 +159,18 @@ for (let i = 0; i < getMenuLinkItems.length; i++) {
 
 function scrollFunction(event) {
 	let itTop = document.querySelectorAll('.menu-links a');
-
 	let item;
 	for (let i = 0; i < itTop.length; i++) {
 		item = itTop[i];
 		let data = event.target;
-		let top = data.dataset.top;
-
-		window.scrollTo({
-			top: top,
-			behavior: "smooth",
-		});
+		let target = data.dataset.target;
+		let page = document.getElementsByClassName('section');
+		for (let i = 0; i < page.length; i++) {
+			let pageTarget = page[i].dataset.target;
+			if (pageTarget === target) {
+				page[i].scrollIntoView({behavior: "smooth", block: "start"});
+			}
+		}
 	}
 }
 

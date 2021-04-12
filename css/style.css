@@ -789,6 +789,7 @@ header {
 }
 
 #page4 {
+	display: flex;
 	background-color: #ffffff;
 	width: 100%;
 }
@@ -1461,10 +1462,6 @@ footer {
 }
 
 @media only screen and (max-width: 767px) {
-	.second-page {
-		width: 100% !important;
-	}
-
 
 	.clicked {
 		margin: 5% auto;
@@ -1520,6 +1517,7 @@ footer {
 
 	.second-page {
 		width: 100%;
+		margin-top: 80px;
 	}
 
 	.second-bg-photo {
@@ -1562,6 +1560,7 @@ footer {
 	.third-page {
 		height: 100%;
 		display: initial;
+		margin-top: 80px;
 	}
 
 	.third-cont {
@@ -1605,6 +1604,7 @@ footer {
 		display: initial;
 		width: 100%;
 		margin: auto;
+		margin-top: 80px !important;
 	}
 
 	.fourth-part1 {
@@ -1723,6 +1723,7 @@ footer {
 		display: initial;
 		height: 100%;
 		padding: 5%;
+		margin-top: 80px;
 	}
 
 	.sev-contacts {
