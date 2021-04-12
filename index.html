@@ -2,340 +2,366 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<title>Portfolio</title>
 	<link href="css/style.css" rel="stylesheet">
-	<link rel="stylesheet" href="./slick/slick.css">
-	<link rel="stylesheet" href="./slick/slick-theme.css">
+	<link href="./slick/slick.css" rel="stylesheet">
+	<link href="./slick/slick-theme.css" rel="stylesheet">
 </head>
 <body>
 <div class="main">
 	<header id="header">
-<!--		<div class="mobile-menu-icon" onclick="menuFunction()"><span></span></div>-->
-
 		<nav class="header-nav">
 			<div class="mobile-menu-icon" onclick="menuFunction()"><span></span></div>
 			<ul class="menu">
-				<li class="menu-links item1" ><a data-top="0" onclick="scrollFunction(1, event)" >intro</a></li>
-				<li class="menu-links item2"><a data-top="842" onclick="scrollFunction(2, event)" >about</a></li>
-				<li class="menu-links item3"><a data-top="1905" onclick="scrollFunction(3, event)" >works</a></li>
-				<li class="menu-links item4"><a data-top="2919" onclick="scrollFunction(4, event)" >experience</a></li>
-				<li class="menu-links item5"><a data-top="4400" onclick="scrollFunction(5, event)" >blog</a></li>
-				<li class="menu-links item6"><a data-top="5264" onclick="scrollFunction(6, event)" >contact</a></li>
+				<li class="menu-links item1"><a data-top="0">intro</a></li>
+				<li class="menu-links item2"><a data-top="855">about</a></li>
+				<li class="menu-links item3"><a data-top="1915">works</a></li>
+				<li class="menu-links item4"><a data-top="2930">experience</a></li>
+				<li class="menu-links item5"><a data-top="4410">blog</a></li>
+				<li class="menu-links item6"><a data-top="5275">contact</a></li>
 			</ul>
 		</nav>
 	</header>
 
 	<div class="content">
-      <div id="page1">
-		  <div class="first-page">
-					<div class="dot-nav">
-						<a class="dot-link dot-active"  onclick="scrollFunction(1, event)"></a>
-						<a class="dot-link"  onclick="scrollFunction(2, event)"></a>
-						<a class="dot-link"  onclick="scrollFunction(3, event)"></a>
-						<a class="dot-link"  onclick="scrollFunction(4, event)"></a>
-						<a class="dot-link"  onclick="scrollFunction(5, event)"></a>
-						<a class="dot-link"  onclick="scrollFunction(6, event)"></a>
-					</div>
+		<div id="page1">
+			<div class="first-page">
+				<div class="dot-nav">
+					<a class="dot-link dot-active" data-top="0"></a>
+					<a class="dot-link" data-top="855"></a>
+					<a class="dot-link" data-top="1915"></a>
+					<a class="dot-link" data-top="2930"></a>
+					<a class="dot-link" data-top="4410"></a>
+					<a class="dot-link" data-top="5275"></a>
+				</div>
 
-			  <div class="page-bg-photo"></div>
-					<div class="page-back">
-						<div class="information">
-							<div class="first-text">
-								<p class="text-1">I'm a web developer,</p>
-								<p class="text-2">Inna Isoyan</p>
-								<p class="text-3">I am a junior web developer who is always up for challenges and finds creative approaches to solve problems.</p>
-							</div>
-							<div class="first-logo">
-								<img src="img/facebook.png" onclick="window.open('https://www.facebook.com/iinnyann/', '_blank')" alt="facebook">
-<!--								<img src="img/googleplus.png" onclick="window.open('https://mail.google.com/mail/u/1/#inbox?compose=DmwnWrRlRjDxkqLsNZFPzxNRSgdhSrPkmcRCKBBnzfqHqpcNwzqcSlbNpTcFWBDZMPSfJCvkgnrq','_blank')" alt="google">-->
-								<a href="mailto:isoyan.inna@gmail.com"><img src="img/googleplus.png"  alt="google"></a>
-								<img src="img/twitter.png" onclick="window.open('https://twitter.com/?lang=en', '_blank')" alt="twitter">
-								<img src="img/instagram.png" onclick="window.open('https://www.instagram.com/majoriza_/', '_blank')" alt="instagram">
-							</div>
-							<div class="first-contact">
-								<p><a href="tel:+37494775087">+374 94 77 50 87</a></p>
-								<a href="https://mail.google.com/mail/u/1/#inbox" target="_blank"> isoyan.inna@gmail.com </a>
-							</div>
+				<div class="page-bg-photo"></div>
+				<div class="page-back">
+					<div class="information">
+						<div class="first-text">
+							<p class="text-1">I'm a web developer,</p>
+							<p class="text-2">Inna Isoyan</p>
+							<p class="text-3">I am a junior web developer who is always up for challenges and finds creative
+								approaches to solve problems.</p>
+						</div>
+						<div class="first-logo">
+							<img alt="facebook" onclick="window.open('https://www.facebook.com/iinnyann/', '_blank')"
+							     src="img/facebook.png">
+							<a href="mailto:isoyan.inna@gmail.com"><img alt="google" src="img/googleplus.png"></a>
+							<img alt="twitter" onclick="window.open('https://twitter.com/?lang=en', '_blank')" src="img/twitter.png">
+							<img alt="instagram" onclick="window.open('https://www.instagram.com/majoriza_/', '_blank')"
+							     src="img/instagram.png">
+						</div>
+						<div class="first-contact">
+							<p><a href="tel:+37494775087">+374 94 77 50 87</a></p>
+							<a href="https://mail.google.com/mail/u/1/#inbox" target="_blank"> isoyan.inna@gmail.com </a>
+						</div>
 					</div>
 				</div>
 			</div>
-     </div>
-			<div id="page2">
-				<div class="second-page">
-					<div class="second-text">
-						<div class="sec-text1">
-							<div class="line"></div>
-							<p> My Story </p>
+		</div>
+		<div id="page2">
+			<div class="second-page">
+				<div class="second-text">
+					<div class="sec-text1">
+						<div class="line"></div>
+						<p> My Story </p>
+					</div>
+					<div class="sec-text2">
+						<p>My name is Inna. I'm a junior web developer who is always up for challenges and finds creative approaches
+							to solve problems.I'm hardworking and ready to learn new things, work with a large team and constantly
+							improve my programming knowledge.</p>
+					</div>
+					<div class="sec-text3">
+						<p>I am twenty years old student, taking bachelors degree in National Polytechnic University of Armenia. I
+							am currently in my second year. From the age of seventeen I went to the Tumo Center for Creative
+							Technologies, where I got acquainted with programming and took my first steps in this area. I like web
+							programming and I am going to study a lot, get excited and become a good web developer. Some of my skills
+							can be seen below. </p>
+					</div>
+					<div class="skill-bars">
+						<div class="bar">
+							<div class="skill html">
+								<p class="skill-text">html</p>
+								<p class="num">80%</p>
+							</div>
+							<div class="pro-lines">
+								<div class="progress-line"></div>
+								<div class="progress-line-2"></div>
+							</div>
 						</div>
-						<div class="sec-text2">
-							<p>My name is Inna. I'm a junior web developer who is always up for challenges and finds creative approaches to solve problems.I'm hardworking and ready to learn new things, work with a large team and constantly improve my programming knowledge.</p>
+
+						<div class="bar">
+							<div class="skill css">
+								<p class="skill-text">css</p>
+								<p class="num">70%</p>
+							</div>
+							<div class="pro-lines">
+								<div class="progress-line"></div>
+								<div class="progress-line-3"></div>
+							</div>
 						</div>
-						<div class="sec-text3">
-							<p>I am twenty years old student, taking bachelors degree in National Polytechnic University of Armenia. I am currently in my second year. From the age of seventeen I went to the Tumo Center for Creative Technologies, where I got acquainted with programming and took my first steps in this area. I like web programming and I am going to study a lot, get excited and become a good web developer. Some of my skills can be seen below. </p>
+
+						<div class="bar">
+							<div class="skill js">
+								<p class="skill-text" id="js">javascript</p>
+								<p class="num">35%</p>
+							</div>
+							<div class="pro-lines">
+								<div class="progress-line"></div>
+								<div class="progress-line-4"></div>
+							</div>
 						</div>
-						<div class="skill-bars">
-									<div class="bar">
-										<div class="skill html">
-											<p class="skill-text">html</p>
-											<p class="num">80%</p>
-										</div>
-										<div class="pro-lines">
-										<div class="progress-line"></div>
-										<div class="progress-line-2"></div>
-										</div>
-									</div>
 
-									<div class="bar">
-										<div class="skill css">
-											<p class="skill-text">css</p>
-											<p class="num">70%</p>
-										</div>
-										<div class="pro-lines">
-										<div class="progress-line"></div>
-										<div class="progress-line-3"></div>
-										</div>
-									</div>
-
-								<div class="bar">
-									<div class="skill js">
-										<p class="skill-text" id="js">javascript</p>
-										<p class="num">35%</p>
-									</div>
-									<div class="pro-lines">
-									<div class="progress-line"></div>
-									<div class="progress-line-4"></div>
-									</div>
-								</div>
-
-							<div class="bar">
-								<div class="skill php">
-									<p class="skill-text">php</p>
-									<p class="num">55%</p>
-								</div>
-								<div class="pro-lines">
+						<div class="bar">
+							<div class="skill php">
+								<p class="skill-text">php</p>
+								<p class="num">55%</p>
+							</div>
+							<div class="pro-lines">
 								<div class="progress-line"></div>
 								<div class="progress-line-5"></div>
-								</div>
 							</div>
-
 						</div>
 					</div>
 				</div>
-				<div class="second-bg-photo"></div>
 			</div>
-			<div id="page3">
-				<div class="third-page">
-					<div class="third-cont">
-						<div class="third-text1">
+			<div class="second-bg-photo"></div>
+		</div>
+		<div id="page3">
+			<div class="third-page">
+				<div class="third-cont">
+					<div class="third-text1">
 						<div class="line2"></div>
 						<p class="work"> My Works</p>
+					</div>
+					<div class="third-text2">
+						<p>During this time, I have made several small projects with minimal functionality and design.</p>
+						<div class="third-link">
+							<a href="https://github.com/iiinnnaaa" target="_blank">View All Works</a>
 						</div>
-						<div class="third-text2">
-							<p>During this time, I have made several small projects with minimal functionality and design.</p>
-							<div class="third-link">
-								<a href="https://github.com/iiinnnaaa" target="_blank">View All Works</a>
+					</div>
+					<div class="works-arrows">
+						<div class="work-left-arrow"><img alt="" src="img/preview.svg"></div>
+						<div class="work-right-arrow"><img alt="" src="img/next.svg"></div>
+					</div>
+				</div>
+
+
+				<div class="third-slide">
+					<div class="slider">
+						<div class="works-slider">
+							<div class="slide-item"><img alt="" class="slide-image"
+							                             src="img/poster1.png"><span><h1>The Under World</h1><h3> November 24, 2016</h3></span>
 							</div>
-						</div>
-						<div class="works-arrows">
-							<div class="work-left-arrow"><img src="img/preview.svg" alt=""></div>
-							<div class="work-right-arrow"><img src="img/next.svg" alt=""></div>
+							<div class="slide-item"><img alt="" class="slide-image" src="img/poster2.jpg"><span><h1>Someones</h1> <h3> November 24, 2016</h3></span>
+							</div>
+							<div class="slide-item"><img alt="" class="slide-image" src="img/poster3.jpg"><span><h1>400</h1> <h3> November 24, 2016</h3></span>
+							</div>
+							<div class="slide-item"><img alt="" class="slide-image"
+							                             src="img/poster4.jpg"><span><h1>The Under World</h1> <h3> November 24, 2016</h3></span>
+							</div>
+							<div class="slide-item"><img alt="" class="slide-image"
+							                             src="img/poster5.jpg"><span><h1>Death Note</h1> <h3> November 24, 2016</h3></span>
+							</div>
+							<div class="slide-item"><img alt="" class="slide-image" src="img/poster6.jpg"><span><h1>Office</h1> <h3> November 24, 2016</h3></span>
+							</div>
+							<div class="slide-item"><img alt="" class="slide-image" src="img/poster7.jpg"><span><h1>Queen</h1> <h3> November 24, 2016</h3></span>
+							</div>
+							<div class="slide-item"><img alt="" class="slide-image" src="img/poster8.jpg"><span><h1>Joker</h1> <h3> November 24, 2016</h3></span>
+							</div>
 						</div>
 					</div>
 
+				</div>
+			</div>
+		</div>
+		<div id="page4">
+			<div class="fourth-page">
+				<div class="fourth-part1">
+					<div class="four-text1"><p>Experience</p>
+						<div class="exp-line"></div>
+					</div>
+					<div class="four-lines">
+						<div class="fourth-num"><p>2020</p>
+							<div class="circle"></div>
+						</div>
+						<div class="fourth-line"></div>
+						<div class="fourth-num2"><p>2021</p>
+							<div class="circle"></div>
+						</div>
+					</div>
+				</div>
 
-					<div class="third-slide">
-						<div class="slider">
-							<div class="works-slider">
-								<div class="slide-item"><img src="img/poster1.png" class="slide-image" alt=""><span><h1>The Under World</h1><h3> November 24, 2016</h3></span></div>
-								<div class="slide-item"><img src="img/poster2.jpg" class="slide-image" alt=""><span><h1>Someones</h1> <h3> November 24, 2016</h3></span></div>
-								<div class="slide-item"><img src="img/poster3.jpg" class="slide-image" alt=""><span><h1>400</h1> <h3> November 24, 2016</h3></span></div>
-								<div class="slide-item"><img src="img/poster4.jpg" class="slide-image" alt=""><span><h1>The Under World</h1> <h3> November 24, 2016</h3></span></div>
-								<div class="slide-item"><img src="img/poster5.jpg" class="slide-image" alt=""><span><h1>Death Note</h1> <h3> November 24, 2016</h3></span></div>
-								<div class="slide-item"><img src="img/poster6.jpg" class="slide-image" alt=""><span><h1>Office</h1> <h3> November 24, 2016</h3></span></div>
-								<div class="slide-item"><img src="img/poster7.jpg" class="slide-image" alt=""><span><h1>Queen</h1> <h3> November 24, 2016</h3></span></div>
-								<div class="slide-item"><img src="img/poster8.jpg" class="slide-image" alt=""><span><h1>Joker</h1> <h3> November 24, 2016</h3></span></div>
+				<div class="fourth-part2">
+					<div class="little-text"><p>I have experience in digital archiving, I have worked on document processing and
+						photographing. Now I work as a PHP intern at Vectus LLC.</p></div>
+					<div class="experience">
+						<div class="exp-s">
+							<div class="f-time"><p>2020</p></div>
+							<div class="name"><p>Sistem Way</p></div>
+							<div class="position"><p>Document Photographer</p></div>
+							<div class="description"><p>I've worked at System Way for 5 months. From July 2020 to November 2020.</p>
 							</div>
 						</div>
+						<div class="exp-s1">
+							<div class="f-time"><p>2021</p></div>
+							<div class="name"><p>Vectus LLC</p></div>
+							<div class="position"><p>PHP Intern</p></div>
+							<div class="description"><p>Currently I'm working at Vectus LLC as PHP Intern.</p></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="page5">
+			<div class="fifth-page">
+				<div class="fifth-text">
+					<p>My Lovely Brends</p>
+					<div class="fifth-line"></div>
+				</div>
+				<div class="fifth-slide">
+					<div class="fifth-slider">
+						<div class="fi-slide"><img alt="" class="fifth-logo" src="img/logo4.png"></div>
+						<div class="fi-slide"><img alt="" class="fifth-logo" src="img/logo4.png"></div>
+						<div class="fi-slide"><img alt="" class="fifth-logo" src="img/logo4.png"></div>
+						<div class="fi-slide"><img alt="" class="fifth-logo" src="img/logo4.png"></div>
+						<div class="fi-slide"><img alt="" class="fifth-logo" src="img/logo4.png"></div>
+						<div class="fi-slide"><img alt="" class="fifth-logo" src="img/logo4.png"></div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div id="page6">
+			<div class="opacity-color"></div>
+			<div class="sixth-page">
+				<div class="sixth-cont">
+					<div class="sixth-text1">
+						<p>My Blog</p>
+					</div>
+					<div class="sixth-text2">
+						<p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
+							horrible vermin.</p>
+						<div class="read-blog"><a href="#">Read The Blog</a></div>
+					</div>
+					<div class="sixth-arrows">
+						<div class="left-arrow"><img alt="" src="img/preview.svg"></div>
+						<div class="right-arrow"><img alt="" src="img/next.svg"></div>
+					</div>
+				</div>
+				<div class="sixth-slide">
+					<div class="slide-text">
+						<div class="blog-container">
+							<div class="blog-title" id="title-1"><p>Pityful a rethoric question ran</p></div>
+							<div class="blog-info">
+								<div class="blog-time"><p><img alt="" src="img/time.png">June 6, 2016</p></div>
+								<div class="blog-user"><p><img alt="" src="img/pencil.png">John Smith</p></div>
+							</div>
+							<div class="blog-content" id="content-1"><p>A wonderful serenity has taken possession of my entire soul,
+								like these sweet mornings of spring which I enjoy with my whole... </p></div>
+							<div class="blog-line"></div>
+						</div>
+
+						<div class="blog-container">
+							<div class="blog-title" id="title-2"><p>Even the all-powerful Pointing</p></div>
+							<div class="blog-info">
+								<div class="blog-time" id="time-2"><p><img alt="" src="img/time.png">June 6, 2016</p></div>
+								<div class="blog-user" id="user-2"><p><img alt="" src="img/pencil.png">John Smith</p></div>
+							</div>
+							<div class="blog-content" id="content-2"><p>Cum sociis natoque penatibus et magnis dis parturient montes,
+								nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper. Nullam quis risus... </p></div>
+							<div class="blog-line" id="line-2"></div>
+						</div>
+						<div class="blog-container">
+							<div class="blog-title" id="title-3"><p>Separated they live in Bookmarksgrove</p></div>
+							<div class="blog-info">
+								<div class="blog-time" id="time-3"><p><img alt="" src="img/time.png">June 6, 2016</p></div>
+								<div class="blog-user" id="user-3"><p><img alt="" src="img/pencil.png">John Smith</p></div>
+							</div>
+							<div class="blog-content" id="content-3"><p>Cum sociis natoque penatibus et magnis dis parturient montes,
+								nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper. Nullam quis risus... </p></div>
+							<div class="blog-line" id="line-3"></div>
+						</div>
+
+						<div class="blog-container">
+							<div class="blog-title" id="title-2"><p>Even the all-powerful Pointing</p></div>
+							<div class="blog-info">
+								<div class="blog-time"><p><img alt="" src="img/time.png">June 6, 2016</p></div>
+								<div class="blog-user"><p><img alt="" src="img/pencil.png">John Smith</p></div>
+							</div>
+							<div class="blog-content" id="content-2"><p>Cum sociis natoque penatibus et magnis dis parturient montes,
+								nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper. Nullam quis risus... </p></div>
+							<div class="blog-line" id="line-2"></div>
+						</div>
+
+						<div class="blog-container">
+							<div class="blog-title" id="title-1"><p>Pityful a rethoric question ran</p></div>
+							<div class="blog-info">
+								<div class="blog-time"><p><img alt="" src="img/time.png">June 6, 2016</p></div>
+								<div class="blog-user"><p><img alt="" src="img/pencil.png">John Smith</p></div>
+							</div>
+							<div class="blog-content" id="content-1"><p>A wonderful serenity has taken possession of my entire soul,
+								like these sweet mornings of spring which I enjoy with my whole... </p></div>
+							<div class="blog-line"></div>
+						</div>
+
+						<div class="blog-container">
+							<div class="blog-title" id="title-3"><p>Separated they live in Bookmarksgrove</p></div>
+							<div class="blog-info">
+								<div class="blog-time"><p><img alt="" src="img/time.png">June 6, 2016</p></div>
+								<div class="blog-user"><p><img alt="" src="img/pencil.png">John Smith</p></div>
+							</div>
+							<div class="blog-content" id="content-3"><p>Cum sociis natoque penatibus et magnis dis parturient montes,
+								nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper. Nullam quis risus... </p></div>
+							<div class="blog-line" id="line-3"></div>
+						</div>
+
 
 					</div>
 				</div>
 			</div>
-			<div id="page4">
-				<div class="fourth-page">
-					<div class="fourth-part1">
-						<div class="four-text1"><p>Experience</p>
-							<div class="exp-line"></div>
-						</div>
-						<div class="four-lines">
-							<div class="fourth-num"><p>2020</p><div class="circle"></div></div>
-								<div class="fourth-line"></div>
-							<div class="fourth-num2"><p>2021</p><div class="circle"></div></div>
-<!--								<div class="fourth-line"></div>-->
-<!--							<div class="fourth-num3"><p>1997-2017 </p><div class="circle"></div></div>-->
-						</div>
-					</div>
-
-					<div class="fourth-part2">
-						<div class="little-text"><p>I have experience in digital archiving, I have worked on document processing and photographing. Now I work as a PHP intern at Vectus LLC.</p></div>
-							<div class="experience">
-								<div class="exp-s">
-									<div class="f-time"><p>2020</p></div>
-									<div class="name"><p>Sistem Way</p></div>
-									<div class="position"><p>Document Photographer</p></div>
-										<div class="description"><p>I've worked at System Way for 5 months. From July 2020 to November 2020.</p></div>
-								</div>
-								<div class="exp-s1">
-									<div class="f-time"><p>2021</p></div>
-									<div class="name"><p>Vectus LLC</p></div>
-									<div class="position"><p>PHP Intern</p></div>
-										<div class="description"><p>Currently I'm working at Vectus LLC as PHP Intern.</p></div>
-								</div>
-<!--								<div class="exp-s2">-->
-<!--									<div class="f-time"><p>1997-2017</p></div>-->
-<!--									<div class="name"><p>Allen Film</p></div>-->
-<!--									<div class="position"><p>Film Director</p></div>-->
-<!--										<div class="description"><p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his good dream</p></div>-->
-<!--								</div>-->
-						</div>
+		</div>
+		<div id="page7">
+			<div class="sev-section">
+				<div class="sev-contacts">
+					<div class="sev-cont"><p>Contact</p></div>
+					<div class="sev-address" onclick="window.open('https://goo.gl/maps/YB9v4GWbz7G97QZaA','_blank')"><p><img
+						alt="address" src="img/address.png"> &nbsp; Yerevan, Armenia</p></div>
+					<div class="sev-num"><p><img alt="number" src="img/phone.png">&nbsp; &nbsp; <a href="tel:+37494775087">+374 94
+						77 50 87</a></p></div>
+					<div class="sev-mail"><img alt="mail" src="img/mail.png"> &nbsp;<a
+						href="https://mail.google.com/mail/u/1/#inbox?compose=DmwnWrRlRjDxkqLsNZFPzxNRSgdhSrPkmcRCKBBnzfqHqpcNwzqcSlbNpTcFWBDZMPSfJCvkgnrq"
+						target="_blank">isoyan.inna@gmail.com</a></div>
+					<div class="sev-social">
+						<img alt="facebook" id="fb" onclick="window.open('https://www.facebook.com/iinnyann/', '_blank')"
+						     src="img/facebook.png">
+						<a href="mailto:isoyan.inna@gmail.com"><img alt="google" src="img/googleplus.png"></a>
+						<img alt="twitter" onclick="window.open('https://twitter.com/?lang=en', '_blank')" src="img/twitter.png">
+						<img alt="instagram" onclick="window.open('https://www.instagram.com/majoriza_/', '_blank')"
+						     src="img/instagram.png">
 					</div>
 				</div>
-			</div>
-			<div id="page5">
-				<div class="fifth-page">
-					<div class="fifth-text">
-						<p>My Lovely Brends</p>
-						<div class="fifth-line"></div>
-					</div>
-					<div class="fifth-slide">
-						<div class="fifth-slider">
-							<div class="fi-slide"><img src="img/logo4.png" class="fifth-logo" alt=""></div>
-							<div class="fi-slide"><img src="img/logo4.png" class="fifth-logo" alt=""></div>
-							<div class="fi-slide"><img src="img/logo4.png"  class="fifth-logo" alt=""></div>
-							<div class="fi-slide"><img src="img/logo4.png" class="fifth-logo" alt=""></div>
-							<div class="fi-slide"><img src="img/logo4.png"  class="fifth-logo" alt=""></div>
-							<div class="fi-slide"><img src="img/logo4.png" class="fifth-logo"  alt=""></div>
-						</div>
-
-					</div>
+				<div class="sev-forms">
+					<input id="full-name" name="full-name" placeholder="Full Name*" type="text">
+					<input id="email" name="email" placeholder="Email*" type="email">
+					<input id="subject" name="subject" placeholder="Subject*" type="text">
+					<textarea cols="25" id="message" placeholder="Message*" rows="5"></textarea>
+					<button>Send Message</button>
 				</div>
 			</div>
-			<div id="page6">
-				<div class="opacity-color"></div>
-				<div class="sixth-page">
-					<div class="sixth-cont">
-						<div class="sixth-text1">
-							<p>My Blog</p>
-						</div>
-						<div class="sixth-text2">
-							<p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.</p>
-							<div class="read-blog">	<a href="#">Read The Blog</a></div>
-						</div>
-						<div class="sixth-arrows">
-							<div class="left-arrow"><img src="img/preview.svg" alt=""></div>
-							<div class="right-arrow"><img src="img/next.svg" alt=""></div>
-						</div>
-					</div>
-					<div class="sixth-slide">
-						<div class="slide-text">
-							<div class="blog-container">
-								<div class="blog-title" id="title-1"><p>Pityful a rethoric question ran</p></div>
-								<div class="blog-info">
-									<div class="blog-time"><p><img src="img/time.png" alt="">June 6, 2016</p></div>
-									<div class="blog-user"><p><img src="img/pencil.png" alt="">John Smith</p></div>
-								</div>
-								<div class="blog-content" id="content-1"><p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole... </p></div>
-								<div class="blog-line"></div>
-							</div>
-
-							<div class="blog-container">
-								<div class="blog-title" id="title-2"><p>Even the all-powerful Pointing</p></div>
-								<div class="blog-info">
-									<div class="blog-time" id="time-2"><p><img src="img/time.png" alt="">June 6, 2016</p></div>
-									<div class="blog-user" id="user-2"><p><img src="img/pencil.png" alt="">John Smith</p></div>
-								</div>
-								<div class="blog-content" id="content-2"><p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper. Nullam quis risus... </p></div>
-								<div class="blog-line" id="line-2"></div>
-							</div>
-														<div class="blog-container">
-															<div class="blog-title" id="title-3"><p>Separated they live in Bookmarksgrove</p></div>
-															<div class="blog-info">
-																<div class="blog-time" id="time-3"><p><img src="img/time.png" alt="">June 6, 2016</p></div>
-																<div class="blog-user" id="user-3"><p><img src="img/pencil.png" alt="">John Smith</p></div>
-															</div>
-															<div class="blog-content" id="content-3"><p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper. Nullam quis risus... </p></div>
-															<div class="blog-line" id="line-3"></div>
-														</div>
-
-							<div class="blog-container">
-								<div class="blog-title" id="title-2"><p>Even the all-powerful Pointing</p></div>
-								<div class="blog-info">
-									<div class="blog-time"><p><img src="img/time.png" alt="">June 6, 2016</p></div>
-									<div class="blog-user"><p><img src="img/pencil.png" alt="">John Smith</p></div>
-								</div>
-								<div class="blog-content" id="content-2"><p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper. Nullam quis risus... </p></div>
-								<div class="blog-line" id="line-2"></div>
-							</div>
-
-							<div class="blog-container">
-								<div class="blog-title" id="title-1"><p>Pityful a rethoric question ran</p></div>
-								<div class="blog-info">
-									<div class="blog-time"><p><img src="img/time.png" alt="">June 6, 2016</p></div>
-									<div class="blog-user"><p><img src="img/pencil.png" alt="">John Smith</p></div>
-								</div>
-								<div class="blog-content" id="content-1"><p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole... </p></div>
-								<div class="blog-line"></div>
-							</div>
-
-							<div class="blog-container">
-								<div class="blog-title" id="title-3"><p>Separated they live in Bookmarksgrove</p></div>
-								<div class="blog-info">
-									<div class="blog-time"><p><img src="img/time.png" alt="">June 6, 2016</p></div>
-									<div class="blog-user"><p><img src="img/pencil.png" alt="">John Smith</p></div>
-								</div>
-								<div class="blog-content" id="content-3"><p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum id ligula porta felis euismod semper. Nullam quis risus... </p></div>
-								<div class="blog-line" id="line-3"></div>
-							</div>
-
-
-
-						</div>
-					</div>
-			</div>
-<!--			<div class="section" id="page7"></div>-->
+		</div>
 	</div>
-			<div id="page7">
-				<div class="sev-section">
-					<div class="sev-contacts">
-						<div class="sev-cont"><p>Contact</p></div>
-						<div class="sev-address" onclick="window.open('https://goo.gl/maps/YB9v4GWbz7G97QZaA','_blank')"><p><img src="img/address.png" alt="address">	&nbsp; Yerevan, Armenia</p></div>
-						<div class="sev-num"><p><img src="img/phone.png" alt="number">&nbsp;	&nbsp; <a href="tel:+37494775087">+374 94 77 50 87</a></p></div>
-						<div class="sev-mail"><img src="img/mail.png" alt="mail">	&nbsp;<a href="https://mail.google.com/mail/u/1/#inbox?compose=DmwnWrRlRjDxkqLsNZFPzxNRSgdhSrPkmcRCKBBnzfqHqpcNwzqcSlbNpTcFWBDZMPSfJCvkgnrq" target="_blank">isoyan.inna@gmail.com</a></div>
-						<div class="sev-social">
-							<img id="fb" src="img/facebook.png" alt="facebook" onclick="window.open('https://www.facebook.com/iinnyann/', '_blank')">
-<!--							<img src="img/googleplus.png" alt="google" onclick="window.open('https://mail.google.com/mail/u/1/#inbox?compose=DmwnWrRlRjDxkqLsNZFPzxNRSgdhSrPkmcRCKBBnzfqHqpcNwzqcSlbNpTcFWBDZMPSfJCvkgnrq','_blank')">-->
-							<a href="mailto:isoyan.inna@gmail.com"><img src="img/googleplus.png"  alt="google"></a>
-							<img src="img/twitter.png" alt="twitter" onclick="window.open('https://twitter.com/?lang=en', '_blank')">
-							<img src="img/instagram.png" alt="instagram" onclick="window.open('https://www.instagram.com/majoriza_/', '_blank')">
-						</div>
-					</div>
-					<div class="sev-forms">
-						<input type="text" id="full-name" name="full-name" placeholder="Full Name*">
-						<input type="email" id="email" name="email" placeholder="Email*">
-						<input type="text" id="subject" name="subject" placeholder="Subject*">
-						<textarea  id="message" rows="5" cols="25" placeholder="Message*"></textarea>
-						<button>Send Message</button>
-					</div>
-				</div>
-			</div>
-</div>
 </div>
 
-	<footer>
-		<div class="footer"><p>Copyright 2021 Vectus LLC, All Right Reserved</p></div>
-	</footer>
+<footer>
+	<div class="footer"><p>Copyright 2021 Vectus LLC, All Right Reserved</p></div>
+</footer>
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script crossorigin="anonymous"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+        src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="slick/slick.min.js"></script>
 <script src="js/index.js" type="text/javascript"></script>
 </body>
